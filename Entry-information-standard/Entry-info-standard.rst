@@ -6,7 +6,7 @@ The standard described here (still under discussion) provides guidelines to supp
 
 This standard comprises a list of entry attributes to be specified for an entry to be classified in a 5 tier rating of entry completeness and quality in BIII.eu.
 
-BIII.eu includes two ontologies on its framework: `Bise core ontology <https://github.com/NeuBIAS/bise-core-ontology>` and `EDAM-Bioimaging <https://github.com/edamontology/edam-bioimaging>`. 
+BIII.eu includes two ontologies on its framework: `Bise core ontology <https://github.com/NeuBIAS/bise-core-ontology>`_ and `EDAM-Bioimaging <https://github.com/edamontology/edam-bioimaging>`_. 
 
 In addition we provide curation guidelines describing how each attribute should be specified to ensure the quality of BIII.eu entries. These guidelines are not limited to the syntatic and semantic constraints defined by EDAM-bioimaging ontology and BISE-core-ontology
 
