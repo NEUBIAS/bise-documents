@@ -4,9 +4,11 @@ BIII.eu software entry information standard
 ----------------------------------
 The standard described here (still under discussion) provides guidelines to support `BIII.eu webtool <http://www.biii.eu/>`_ curators to monitor the webtool content and tagging. This standard was adapted from the `Tool information standard <https://github.com/bio-tools/biotoolsSchemaDocs/blob/master/information_standard.rst#biotools-information-standard>`_ documentation from `ELIXIR bio.tools <https://github.com/bio-tools/>`_. Thanks to `Jon Ison <https://github.com/joncison>`_ for referencing this documentation. 
 
-This standard comprises a list of entry attributes to be specified for an entry to be classified in a 5 tier rating of entry completeness and quality in BIII.eu. 
+This standard comprises a list of entry attributes to be specified for an entry to be classified in a 5 tier rating of entry completeness and quality in BIII.eu.
 
-In addition we provide curation guidelines (still under discussion) describing how each attribute should be specified to ensure the quality of BIII.eu entries. These guidelines are not limited to the syntatic and semantic constraints defined by EDAM-bioimaging ontology and BISE-core-ontology
+BIII.eu includes two ontologies on its framework: `Bise core ontology <https://github.com/NeuBIAS/bise-core-ontology>` and `EDAM-Bioimaging <https://github.com/edamontology/edam-bioimaging>`. 
+
+In addition we provide curation guidelines describing how each attribute should be specified to ensure the quality of BIII.eu entries. These guidelines are not limited to the syntatic and semantic constraints defined by EDAM-bioimaging ontology and BISE-core-ontology
 
 The standard provides a basis for monitoring of content and labelling of BIII.eu entries initially by: 
 
