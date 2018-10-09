@@ -14,10 +14,10 @@ The standard provides a basis for monitoring of content and labelling of BIII.eu
 
 * *entry completeness* (5 tiers being "SPARSE", "BASIC DETAILS", "DETAILED", "HIGHLY DETAILED" and "COMPREHENSIVE")
 
-.. figure:: /docs/Table.png
-   :align: center
-.. figure:: /docs/Table_groups.png
-   :align: center
+![](/docs/Table.PNG)
+
+![](/docs/Table_groups.PNG)
+
 
 
 The standard is applied to BIII.eu as follows: 
