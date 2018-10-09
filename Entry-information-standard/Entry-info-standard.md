@@ -14,12 +14,6 @@ The standard provides a basis for monitoring of content and labelling of BIII.eu
 
 * *entry completeness* (5 tiers being "SPARSE", "BASIC DETAILS", "DETAILED", "HIGHLY DETAILED" and "COMPREHENSIVE")
 
-![Table](/docs/Table.PNG)
-
-![Table_groups](/docs/Table_groups.PNG)
-
-
-
 The standard is applied to BIII.eu as follows: 
 
 * "SPARSE": Minimum information requirement for new entries. A SPARSE entry may be invisible in the webtool (and made it clear to the curator adding the entry in the UI) by default and will only show after aditional information is added (similar to what occurs in bio.tools). 
