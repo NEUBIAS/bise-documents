@@ -92,7 +92,7 @@ Canonical software name assigned by the tagger, preferably the software develope
 
 >   If in exceptional cases (*i.e.* when registering, as separate entries, versions of a tool with fundamental differences, substitute for ``toolName`` in the pattern above:
    
-     ``toolname versionID`` *e.g.* ``ilastik 0.5``
+> ``toolname versionID`` *e.g.* ``ilastik 0.5``
 
    where ``versionID`` is the version number.
    
