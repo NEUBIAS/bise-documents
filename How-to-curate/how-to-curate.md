@@ -135,3 +135,13 @@ An illustrative image that represents the main functionality of the software ent
 **1.** It **SHOULD** represent the main software functionality or a screenshot of the UI in use. In cases where a single image cannot show the main functionality of the software entry (usually happens for general purpose software and libraries) the illustrative image **SHOULD** be the logo. 
 
 **NOTE:** The software entry will not be promoted on the front page without an illustrative image.
+
+## License/Openness
+
+There are only 4 discrete values for this attribute: ``Commercial``, ``Free and open source``, ``Free but not open source`` and ``I do not know``. 
+ - ``Commercial`` is used when the software needs to be purchased in order to be used. 
+  - ``Free and open source`` is selected when the source code is available and the software does not need to be purchased in order to be used``
+  - ``Free but not open source`` is used when the source code is not available (closed source) but the software is free to be used. 
+  - ``I do not know`` is used when the License/Openness is not know. This value **SHOULD** be avoided. 
+
+**1.** If an entry has two versions with different License/Openness values (*e.g.* a commercial and a free version with fewer features), it **SHOULD** have both values selected.
