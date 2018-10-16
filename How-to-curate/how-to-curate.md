@@ -86,18 +86,18 @@ Canonical software name assigned by the tagger, preferably the software develope
 >   where:
   
 >   * ``collectionName`` is the name of library, main software in which the component is present natively or other collection the underlying tool is from (if applicable).
->   * ``toolName`` is the `canonical name <http://biotools.readthedocs.io/en/latest/curators_guide.html#name-tool>`_ of the underlying tool
+>   * ``toolName`` is the canonical name of the underlying tool
 >   * use ``API`` for Web APIs or ``WS`` for Web services
 >   * ``providerName`` is the name of the institute providing the online service (if applicable)
 
 >   If in exceptional cases (*i.e.* when registering, as separate entries, versions of a tool with fundamental differences, substitute for ``toolName`` in the pattern above:
    
-     ``toolname versionID`` *e.g.* ``FindPeaks 3.1``
+     ``toolname versionID`` *e.g.* ``ilastik 0.5``
 
    where ``versionID`` is the version number.
    
       
->> tip::
+>> ** Tip: **
 >>   - in case of mulitple related entries be consistent, *e.g.* ``Open PHACTS`` and ``Open PHACTS API``
 >>   - be wary of names that are very long (>25 characters). If shortening the name is necessary, don't truncate it in a way (*e.g.* within the middle of a word) that would render it meaningless or unintuitive
 
