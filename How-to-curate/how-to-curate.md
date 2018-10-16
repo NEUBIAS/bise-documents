@@ -128,3 +128,10 @@ Textual description of the software, e.g. *"The neuTube is a collection of neuro
     
 **3.** **SHOULD** (if available) include the author's ORCID ID with the following template: ``LastName, FirstName (orcid.org/xxxx-xxxx-xxxx-xxxx)`` so they can be contacted more easily (to get the Orcid , google orcid + author name to get it. orcid.org/xxxx-xxxx-xxxx-xxxx). 
 
+## Illustrative image 
+
+An illustrative image that represents the main functionality of the software entry.
+
+**1.** It **SHOULD** represent the main software functionality or a screenshot of the UI in use. In cases where a single image cannot show the main functionality of the software entry (usually happens for general purpose software and libraries) the illustrative image **SHOULD** be the logo. 
+
+**NOTE:** The software entry will not be promoted on the front page without an illustrative image.
