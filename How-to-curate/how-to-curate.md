@@ -90,7 +90,7 @@ Canonical software name assigned by the tagger, preferably the software develope
 >   * use ``API`` for Web APIs or ``WS`` for Web services
 >   * ``providerName`` is the name of the institute providing the online service (if applicable)
 
->   If in exceptional cases (*i.e.* when registering, as separate entries, `versions <http://biotools.readthedocs.io/en/latest/curators_guide.html#tool-versions>`_ of a tool with `fundamental differences <http://biotools.readthedocs.io/en/latest/curators_guide.html#before-you-start>`_), substitute for ``toolName`` in the pattern above:
+>   If in exceptional cases (*i.e.* when registering, as separate entries, versions of a tool with fundamental differences, substitute for ``toolName`` in the pattern above:
    
      ``toolname versionID`` *e.g.* ``FindPeaks 3.1``
 
