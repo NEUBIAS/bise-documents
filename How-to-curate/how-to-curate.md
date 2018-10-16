@@ -54,3 +54,69 @@ Consider the following *before* adding a software entry in BIII.eu
    
 4. **Plan** how to describe the entry functions (under construction). 
 5. **Read** the general EDAM annotations guidelines (under construction). 
+
+# Attribute Guidelines
+
+The guidelines below are organized into sections as they appear in the _create software_ page in BIII.eu webtool. 
+
+## Name (Software) 
+
+Canonical software name assigned by the tagger, preferably the software developer or service provider, e.g. "Fiji"
+
+
+**1.** **MUST** use name in common use, *e.g.* in the tool homepage or publication.
+
+**2.** **MUST** use short form if available *e.g.* ``MaMuT`` **not** ``MaMuT: A Fiji plugin for the annotation of massive, multi-view data``.
+
+**3.** **MUST NOT** include general or technical terms ("software", "application", "server", "service", "plugin", "app", "add-on" *etc.*) *unless* these are part of the common name
+
+**4.** **MUST NOT** misappropriate the names of other tools, *e.g.* there are many _Erosion_ implementations; Calling any of them "Erosion" would be wrong
+
+**5.** **MUST NOT** include version information *unless* this is part of common name (under discussion - there is still no field for version) 
+
+**6.** **SHOULD** preserve capitalisation *e.g.* ``MaMuT`` **not** ``mamut``.
+
+**7.** **SHOULD** follow the naming patterns (see below)
+
+> ## Naming Patterns
+>   For components that are part of a collection, use the pattern 
+>       ``{collectionName} toolName``
+>   For tools that simply wrap or provide an interface to some other tool (**NOTE: this is still uncommon in bioimage analysis and was a particular situation in biotools. It needs more discussion)**, use the pattern 
+
+>     ``{collectionName} toolName {API|WS}{(providerName)}`` *e.g.* ``EMBOSS water API (ebi)``
+
+>   where:
+  
+>   * ``collectionName`` is the name of library, main software in which the component is present natively or other collection the underlying tool is from (if applicable).
+>   * ``toolName`` is the `canonical name <http://biotools.readthedocs.io/en/latest/curators_guide.html#name-tool>`_ of the underlying tool
+>   * use ``API`` for Web APIs or ``WS`` for Web services
+>   * ``providerName`` is the name of the institute providing the online service (if applicable)
+
+>   If in exceptional cases (*i.e.* when registering, as separate entries, `versions <http://biotools.readthedocs.io/en/latest/curators_guide.html#tool-versions>`_ of a tool with `fundamental differences <http://biotools.readthedocs.io/en/latest/curators_guide.html#before-you-start>`_), substitute for ``toolName`` in the pattern above:
+   
+     ``toolname versionID`` *e.g.* ``FindPeaks 3.1``
+
+   where ``versionID`` is the version number.
+   
+      
+>> tip::
+>>   - in case of mulitple related entries be consistent, *e.g.* ``Open PHACTS`` and ``Open PHACTS API``
+>>   - be wary of names that are very long (>25 characters). If shortening the name is necessary, don't truncate it in a way (*e.g.* within the middle of a word) that would render it meaningless or unintuitive
+
+Description 
+...........
+*Textual description of the software, e.g. "neuTube is a collection of neuron reconstruction tools from fluorescence microscope images. It has an interactive system with a 3D viewer, which can be clicked in 3D and perform neuron tracing automatically and semi-automatically. It can automatically recognize branching points as junctions. Traced neurons can be exported to swc format, which could be imported by various software packages. neuTube has Win and Mac OS standalone executable builds and may also be installed by manual compilation. In addition, neuTube can be used as a plugin in Vaa3D."*
+*example 2: "All-path-pruning 2.0 (APP2) is neuron tracing (fully automated) component of Vaa3D. APP2 prunes an initial reconstruction tree of a neuron’s morphology using a long-segment-first hierarchical procedure instead of the original termini-first-search process in APP. APP2 computes the distance transform of all image voxels directly for a gray-scale image, without the need to binarize the image before invoking the conventional distance transform. APP2 uses a fast-marching algorithm to compute the initial reconstruction trees without pre-computing a large graph. This method allows to trace large images. This method can be used with default parameters or user-defined parameters."
+
+**1.** **MUST** provide a concise summary of purpose / function of the tool
+**2.** **MUST** begin with a capital letter and end with a period ('.') 
+**4.** **SHOULD NOT** include any of the following, *unless* essential to distinguish the tool from other entries:
+
+>  - general or technical terms ("software", "application", "plugin" *etc.*) 
+>  - provenance information *e.g.* software provider, institute or person name
+
+- **5.** **SHOULD NOT** describe how good the software is (mentions of applicability are OK)
+- **6.** **SHOULD NOT** include URLs
+
+     
+
