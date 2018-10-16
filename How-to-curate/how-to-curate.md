@@ -157,3 +157,12 @@ There are only 4 discrete values for this attribute: ``Commercial``, ``Free and 
 **2.** **MUST** be restricted to ``http(s?)://[^\s/$.?#].[^\s]*``
   
 **TIP:** In case a tool lacks its own website, a URL of its code repository is OK. Do not use a general URL such as an institutional homepage, unless nothing better is available.
+
+## Reference publication
+
+**1.** **MUST** resolve to a web page of a journal article or web page of a preprint server that most specifically links to a reference publication.
+
+**2.** **SHOULD** preferably be a DOI link in the form  ``https://doi.org/``+``DOI`` (*e.g.*  ``https://doi.org/10.1371/journal.pbio.1002128``). Normal URL links to the reference publication are OK but discouraged. 
+
+**3.** **SHOULD** preferably resolve to a publication where the tool was first introduced.
+
