@@ -145,3 +145,15 @@ There are only 4 discrete values for this attribute: ``Commercial``, ``Free and 
   - ``I do not know`` is used when the License/Openness is not know. This value **SHOULD** be avoided. 
 
 **1.** If an entry has two versions with different License/Openness values (*e.g.* a commercial and a free version with fewer features), it **SHOULD** have both values selected.
+
+## Entry curator
+
+## Download page
+
+*Homepage of the software, from which is possible to download the software or some URL that best serves this purpose, e.g. "http://icy.bioimageanalysis.org/"*
+
+**1.** **MUST** resolve to a web page from the developer / provider that most specifically provides a downloadable version of the software or has a link to its source code.
+
+**2.** **MUST** be restricted to ``http(s?)://[^\s/$.?#].[^\s]*``
+  
+**TIP:** In case a tool lacks its own website, a URL of its code repository is OK. Do not use a general URL such as an institutional homepage, unless nothing better is available.
