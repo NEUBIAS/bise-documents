@@ -115,9 +115,9 @@ Textual description of the software, e.g. *"neuTube is a collection of neuron re
 >  - general or technical terms ("software", "application", "plugin" *etc.*) 
 >  - provenance information *e.g.* software provider, institute or person name
 
-- **5.** **SHOULD NOT** describe how good the software is (mentions of applicability are OK)
+**5.** **SHOULD NOT** describe how good the software is (mentions of applicability are OK)
 
-- **6.** **SHOULD NOT** include URLs
+**6.** **SHOULD NOT** include URLs
 
      
 
