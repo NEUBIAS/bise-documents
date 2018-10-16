@@ -119,5 +119,12 @@ Textual description of the software, e.g. *"The neuTube is a collection of neuro
 
 **6.** **SHOULD NOT** include URLs
 
-     
+## Author
+
+**1.** Each author item **MUST** correspond to a single individual.
+
+**2.** Each author item **MUST** follow the following pattern:
+    ``LastName, FirstName``, where ``LastName`` **MUST NOT** be abbreviated and ``FirstName`` **SHOULD NOT** be abbreviated (usually when the first name is long it is **RECOMMENDED** to use full ``FirstName`` abbreviations or partial abbreviations (*e.g.* ``SCHOLZ, LEANDRO A. (orcid.org/0000-0002-2411-0429)``). 
+    
+**3.** **SHOULD** (if available) include the author's ORCID ID with the following template: ``LastName, FirstName (orcid.org/xxxx-xxxx-xxxx-xxxx)`` so they can be contacted more easily (to get the Orcid , google orcid + author name to get it. orcid.org/xxxx-xxxx-xxxx-xxxx). 
 
