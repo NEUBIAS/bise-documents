@@ -18,18 +18,16 @@ When you add a new content, you will notice that a similar named tools exist. Pl
 
 Try to fill as many fields as possible. If one field definition is unclear, report in the [BIII.eu forum](http://biii.eu/forum) or raise an issue in github [bise documents repository](https://github.com/NeuBIAS/bise-documents).
 
-------------------
 
-The key words "MUST", "MUST NOT", "REQUIRED", "SHALL", "SHALL NOT", "SHOULD", "SHOULD NOT", "RECOMMENDED",  "MAY", and "OPTIONAL" in this document are to be interpreted as described in [RFC 2119](http://www.ietf.org/rfc/rfc2119.txt>):
+>The key words "MUST", "MUST NOT", "REQUIRED", "SHALL", "SHALL NOT", "SHOULD", "SHOULD NOT", "RECOMMENDED",  "MAY", and "OPTIONAL" in this document are to be interpreted as described in [RFC 2119](http://www.ietf.org/rfc/rfc2119.txt>):
 
-- **"MUST"**, **"REQUIRED"** or **"SHALL"** mean that the guideline is an absolute requirement of the specification.
-- **"MUST NOT"** or **"SHALL NOT"** mean that the guideline is an absolute prohibition of the specification.
-- **"SHOULD"** or **"RECOMMENDED"** mean that there may exist valid reasons in particular circumstances to ignore a particular guideline, but the full implications must be understood and carefully weighed before doing so.
-- **"SHOULD NOT"** or the phrase **"NOT RECOMMENDED"** mean that there may exist valid reasons in particular circumstances when acting contrary to the geuideline is acceptable or even useful, but the full implications should be understood and the case carefully weighed before doing so.
-- **"MAY** or **"OPTIONAL"** mean that the guideline is truly optional; you can choose to follow it or not.
+>- **"MUST"**, **"REQUIRED"** or **"SHALL"** mean that the guideline is an absolute requirement of the specification.
+>- **"MUST NOT"** or **"SHALL NOT"** mean that the guideline is an absolute prohibition of the specification.
+>- **"SHOULD"** or **"RECOMMENDED"** mean that there may exist valid reasons in particular circumstances to ignore a particular guideline, but the full implications must be understood and carefully weighed before doing so.
+>- **"SHOULD NOT"** or the phrase **"NOT RECOMMENDED"** mean that there may exist valid reasons in particular circumstances when acting contrary to the geuideline is acceptable or even useful, but the full implications should be understood and the case carefully weighed before doing so.
+>- **"MAY** or **"OPTIONAL"** mean that the guideline is truly optional; you can choose to follow it or not.
     
 # General guidelines
-------------------
 ## Before you start
 
 Consider the following *before* adding a software entry in BIII.eu
@@ -83,7 +81,7 @@ Canonical software name assigned by the tagger, preferably the software develope
 >       ``{collectionName} toolName``
 >   For tools that simply wrap or provide an interface to some other tool (**NOTE: this is still uncommon in bioimage analysis and was a particular situation in biotools. It needs more discussion)**, use the pattern 
 
->     ``{collectionName} toolName {API|WS}{(providerName)}`` *e.g.* ``EMBOSS water API (ebi)``
+>``{collectionName} toolName {API|WS}{(providerName)}`` *e.g.* ``EMBOSS water API (ebi)``
 
 >   where:
   
@@ -103,19 +101,22 @@ Canonical software name assigned by the tagger, preferably the software develope
 >>   - in case of mulitple related entries be consistent, *e.g.* ``Open PHACTS`` and ``Open PHACTS API``
 >>   - be wary of names that are very long (>25 characters). If shortening the name is necessary, don't truncate it in a way (*e.g.* within the middle of a word) that would render it meaningless or unintuitive
 
-Description 
-...........
-*Textual description of the software, e.g. "neuTube is a collection of neuron reconstruction tools from fluorescence microscope images. It has an interactive system with a 3D viewer, which can be clicked in 3D and perform neuron tracing automatically and semi-automatically. It can automatically recognize branching points as junctions. Traced neurons can be exported to swc format, which could be imported by various software packages. neuTube has Win and Mac OS standalone executable builds and may also be installed by manual compilation. In addition, neuTube can be used as a plugin in Vaa3D."*
+## Description 
+Textual description of the software, e.g. *"neuTube is a collection of neuron reconstruction tools from fluorescence microscope images. It has an interactive system with a 3D viewer, which can be clicked in 3D and perform neuron tracing automatically and semi-automatically. It can automatically recognize branching points as junctions. Traced neurons can be exported to swc format, which could be imported by various software packages. neuTube has Win and Mac OS standalone executable builds and may also be installed by manual compilation. In addition, neuTube can be used as a plugin in Vaa3D."*
+
 *example 2: "All-path-pruning 2.0 (APP2) is neuron tracing (fully automated) component of Vaa3D. APP2 prunes an initial reconstruction tree of a neuron’s morphology using a long-segment-first hierarchical procedure instead of the original termini-first-search process in APP. APP2 computes the distance transform of all image voxels directly for a gray-scale image, without the need to binarize the image before invoking the conventional distance transform. APP2 uses a fast-marching algorithm to compute the initial reconstruction trees without pre-computing a large graph. This method allows to trace large images. This method can be used with default parameters or user-defined parameters."
 
 **1.** **MUST** provide a concise summary of purpose / function of the tool
+
 **2.** **MUST** begin with a capital letter and end with a period ('.') 
+
 **4.** **SHOULD NOT** include any of the following, *unless* essential to distinguish the tool from other entries:
 
 >  - general or technical terms ("software", "application", "plugin" *etc.*) 
 >  - provenance information *e.g.* software provider, institute or person name
 
 - **5.** **SHOULD NOT** describe how good the software is (mentions of applicability are OK)
+
 - **6.** **SHOULD NOT** include URLs
 
      
