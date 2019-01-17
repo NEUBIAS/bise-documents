@@ -1,22 +1,20 @@
 # Guidelines to BIII.eu curators
 
-BIII.eu is a web-based database that includes bioimage analysis tools, such as Software, Training material and Datasets. The guidelines here (under construction) presented will help confirmed taggers add and curate _software_ entries into BIII.eu only. The software entry of the webtool include from simple _components_, such as a gaussian filter, to image processing libraries (_collections_ of components) and _workflows_ (e.g. single particle tracking workflows). 
+BIII.eu is a web-based database that includes bioimage analysis tools, such as Software, Training material and Datasets. The guidelines here presented will help confirmed taggers add and curate _software_ entries into BIII.eu only. The software entry of the webtool include from simple _components_, such as a gaussian filter, to image processing libraries (_collections_ of components) and _workflows_ (e.g. single particle tracking workflows). 
 
-The detailed description of the types of tools that can be included in BIII.eu webtool are still under discussion. However, we ask curators and taggers to include only tools that can be used and relate to image analysis problems in biology (a.k.a bioimage analysis). 
+The detailed description of the types of tools that can be included in BIII.eu webtool are still under discussion. However, we ask curators and taggers to include only tools that can be used (e.g we do not seek a publication without an implementation of the code publicly available. Commercial software can be accepted if specified as so) and relate to image analysis problems in biology (a.k.a bioimage analysis). 
 
 The tools are described using two ontologies, [**BISE-core-ontology**](https://github.com/NeuBIAS/bise-core-ontology) and [**EDAM-Bioimaging**](https://github.com/edamontology/edam-bioimaging). **BISE-core-ontology** contains the structure of description of entries in BIII.eu, not only software, and includes entry properties such as author, reference publication, curator and so on. **EDAM-Bioimaging** is used as a source of terms to describe the entry with Bioimaging related vocabulary.  
 
->In BISE, a software entry describes a bioimage analysis tool, which can be classified as a _component_, a _collection_ or a _workflow_. A _component_ is an implementation of certain image processing / analysis algorithms. Each component alone does not solve a Bioimage Analysis problem. These problems can be addressed by combining such components into workflows. On the orhter hand, a _workflow_ is a set of components assembled in some specific order to process bioimages and estimate some numerical parameters relevant to the biological system under study. Workflows take image data as input and output either processed images or other type of data (usually numeric values). Workflows can be a combination of components from the same or different software packages. Finally, a _collection_ is a software that encapsulate a set of bioimage components and/or workflows, e.g. libraries such as **imglib2** and **scikit-image** or general purpose software such as **Fiji**, **Icy**.
+In BISE, a software entry describes a bioimage analysis tool, which can be classified as a _component_, a _collection_ or a _workflow_. A _component_ is an implementation of certain image processing / analysis algorithms. Each component alone does not solve a Bioimage Analysis problem. These problems can be addressed by combining such components into workflows. On the other hand, a _workflow_ is a set of components assembled in some specific order to process bioimages and estimate some numerical parameters relevant to the biological system under study. Workflows take image data as input and output either processed images or other type of data (usually numeric values). Workflows can be a combination of components from the same or different software packages. Finally, a _collection_ is a software that encapsulate a set of bioimage components and/or workflows, e.g. libraries such as [**imglib2**](http://biii.eu/imglib2) and [**scikit-image**](http://biii.eu/scikit-image) or general purpose software such as [**Fiji**](http://biii.eu/fiji), [**Icy**](http://biii.eu/icy).
 
 OBSERVATION: These curation guidelines were inspired by [biotoolsDocs](https://github.com/bio-tools/biotoolsDocs/blob/master/github_projects.rst) documentation. Part of it has been adapted or used as is from the original **biotoolsDocs**. Thanks to Jon Ison for referencing biotools documentation efforts. 
 
-If you wish to suggest changes or additions to this documentation, please raise an issue to begin the discussion. 
+If you wish to suggest changes or additions to this documentation, please raise [an issue](https://github.com/NeuBIAS/bise-documents/issues) to begin a discussion. 
 
 # How and what to curate? 
 
-When you add a new content, you will notice that a similar named tools exist. Please check if it is the same tool(s) you wanted to tag, if not, name it differently (example: Erosion (Icy) vs Erosion (MorpholibJ)). The purpose is to have a unique title for each entry. Whenever possible, try to add both the _collection_ and an entry by _component_(s): e.g. MorpholibJ is an ImageJ plugin, and an entry by function (erosion in MorpholibJ, watershed in MorpholibJ etc... are all components inside MorpholibJ). The purpose is then to help analysts to find the component they need when constructing a bio image analysis workflow.
-
-Try to fill as many fields as possible. If one field definition is unclear, report in the [BIII.eu forum](http://biii.eu/forum) or raise an issue in github [bise documents repository](https://github.com/NeuBIAS/bise-documents).
+Try to fill as many fields as possible. If one field definition is unclear, report in the [BIII.eu forum](http://biii.eu/forum) or raise [an issue](https://github.com/NeuBIAS/bise-documents/issues) in Github [bise documents repository](https://github.com/NeuBIAS/bise-documents). Also mind that there is an [Entry Information Standard documentation](https://github.com/Leandroscholz/bise-documents/blob/master/Entry-information-standard/Entry-info-standard.md) for BISE, where you can check whether your entry will be classified from 'sparse' to 'comprehensive'.
 
 
 >The key words "MUST", "MUST NOT", "REQUIRED", "SHALL", "SHALL NOT", "SHOULD", "SHOULD NOT", "RECOMMENDED",  "MAY", and "OPTIONAL" in this document are to be interpreted as described in [RFC 2119](http://www.ietf.org/rfc/rfc2119.txt>):
@@ -30,25 +28,27 @@ Try to fill as many fields as possible. If one field definition is unclear, repo
 # General guidelines
 ## Before you start
 
+When you add a new content, you will notice if a similar named tools exist. Please check if it is the same tool(s) you wanted to tag, if not, name it differently (example: Erosion (Icy) vs Erosion (MorpholibJ)). The purpose is to have a unique title for each entry. Whenever possible, try to add both the _collection_ and an entry by _component_(s): e.g. MorpholibJ is an ImageJ plugin, and an entry by function (erosion in MorpholibJ, watershed in MorpholibJ etc.. are all components inside MorpholibJ). The purpose is then to help analysts to find the component they need when constructing a bioimage analysis workflow.
+
 Consider the following *before* adding a software entry in BIII.eu
 
 1. **Are one or more entries required to describe the software?**
 
-   - Software with multiple implementations often require multiple entries. Example: SOAX - has 2 different ways of downloading it: One is the windows standalone executable and the second is the source code, which will require one to compile it in any OS (requiring ITK, VTK and Boost C++ libraries). In that case, the best way is to create two entries: one by location of download since it is actually two different software then, and evrey entry should have only one dowload page (has location). In one entry there is only windows as the supported platform, while in the other, any OS. 
+   - Software with multiple implementations often require multiple entries. Example: SOAX - has 2 different ways of downloading it: One is the windows standalone executable and the second is the source code, which will require one to compile it in any OS (requiring ITK, VTK and Boost C++ libraries). In that case, the best way is to create two entries: one by location of download since it is actually two different software, and each entry should have only one dowload page (has location). In addition one entry would only have Windows as the supported platform, while in the other, any OS. 
    - Collections also often require multiple entries. Example: Simple Neurite Tracer (existing entry) is an ImageJ-Fiji plugin which has three workflow options available: 2 semi-automated and 1 fully automated. In this case, one would create one entry for Simple Neurite Tracer (the plugin) as a _Collection_, then one entry by example workflow, and specify the difference in the title. You will have one plugin, and 3 workflows requiring the plugin Simple Neurite Tracer.
    - tools with multiple interfaces (not described in bise-core-ontology) **SHOULD** be described by a single entry **unless** these interfaces provide fundamental functional differences. 
    - if in doubt, post in BIII.eu forum or contact confirmed taggers or admin.
      
 2. **What if the software is already registered?** 
 
-- if you are the rightful owner of the entry (*i.e.* the tool developer or provider of an online service) and you are a confirmed tagger, change the field _entry curator_ to your username. In case you are not a confirmed tagger, ask for modification in the BIII.eu forum. 
+- if you are the rightful owner of the entry (*i.e.* the tool developer or provider of an online service) and you are a confirmed tagger, change the field _entry curator_ to your username. In case you are not a confirmed tagger, ask for modification of your user status in the BIII.eu in [this](http://biii.eu/node/1361) page. 
 
-- if you are a normal user but wishes to suggest modifications to an existing entry, post in the BIII.eu forum and describe your suggestions.
+- if you are a normal user but wishes to suggest modifications to an existing entry, add a comment to the page of that entry and describe your suggestions.
      
 3. **Are there version-specific considerations?**
 
-   - as a rule, a software entry in BIII.eu **SHOULD** describe the *latest version* available at the time of registration and **SHOULD** be updated, as required, for subsequent releases.
-   - if a new version has fundamental functional differences it **MAY** be registered as an entirely new entry.  In such cases, follow carefully the guidelines for entry **name** and **version** (under construction). 
+   - as a rule, a software entry in BIII.eu **SHOULD** describe the *latest version* available at the time of registration and **SHOULD** be updated, as required, for subsequent releases. Note that revision of your own entries is always available, so if you update to describe a specific version, please state so in the revision log.
+   - if a new version has fundamental functional differences it **MAY** be registered as an entirely new entry.  In such cases, follow carefully the guidelines for entry **name** and **version** (see Name). 
    
 4. **Plan** how to describe the entry functions (under construction). 
 5. **Read** the general EDAM annotations guidelines (under construction). 
@@ -144,9 +144,10 @@ There are only 4 discrete values for this attribute: ``Commercial``, ``Free and 
   - ``Free but not open source`` is used when the source code is not available (closed source) but the software is free to be used. 
   - ``I do not know`` is used when the License/Openness is not know. This value **SHOULD** be avoided. 
 
-**1.** If an entry has two versions with different License/Openness values (*e.g.* a commercial and a free version with fewer features), it **SHOULD** have both values selected.
+**1.** If an entry is a Shareware software with different License/Openness values (*e.g.* a commercial and a free version with fewer features), it **SHOULD** have both values selected. However, we discourage users to add entries of such type. 
 
 ## Entry curator
+The entry curator field links to a BIII.eu user who is either: (1) the user who added the entry, but who is not the rightful owner of the tool, (2) a confirmed tagger, who checked the entry and curated it or (3) the rightful owner of the entry (*i.e* the tool developer or provider of the online service). 
 
 ## Download page
 
@@ -166,3 +167,30 @@ There are only 4 discrete values for this attribute: ``Commercial``, ``Free and 
 
 **3.** **SHOULD** preferably resolve to a publication where the tool was first introduced.
 
+## Documentation
+
+A link to a source of information about the use, installation and applications of the software. Accepts more than one documentation attribute entry. 
+**1.** MUST resolve to a web page from which a can obtain information about how to use the software. For example, a link to a user’s manual (e.g. Neural Circuit Tracer main page, or the the link to the [User guide](http://www.northeastern.edu/neurogeometry/wp-content/uploads/User-Guide-V-4-0.pdf) itself), a wiki page (e.g. [Anamorf Wiki](https://bitbucket.org/djpbarry/anamorf/wiki/Home), or other link from which similar information can be obtained (example, Using Fiji page or a readme page with detailed information about the software). 
+**2.** From all the options above, it is RECOMMENDED that, if only one Documentation attribute is given, the URL to the documentation resolves to the most used and comprehensive source of information about the software, no matter its type (wiki, pdf file, webpage linking to other pages, etc..).
+**3.** MAY receive more than one Documentation link (use Add another item button).
+
+## Has usage example
+**1.** MAY link to an existing node in BIII.eu database (e.g. a workflow, a training material, a dataset…). 
+**2.** MAY receive more than one usage example link (use Add another item button).
+
+## Has comparison
+## DOI link ** (DOI of the software)
+## Has Training material
+## Has function (EDAM-Bioimaging)
+## Has Topic (EDAM-Bioimaging)
+## Has biological terms
+## Additional keywords
+## Requires
+## Execution platform
+## Implementation type
+## License
+
+Has programming language
+is compatible with
+Supported image dimension
+Interaction level
