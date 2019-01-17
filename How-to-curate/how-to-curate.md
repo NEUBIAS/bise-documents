@@ -194,20 +194,56 @@ An url that links to a document, preferably in written media (pdf, slide deck), 
 **3.** **MAY** receive more than one comparison link (use Add another item button).
 
 ## DOI link ** (DOI of the software)
-A DOI link to the software, related to the correct version of the tool described in the entry. There are many options out there (see [this](https://blog.datacite.org/doi-registrations-software/) blog post from Datacite), but the most commonly used is [Zenodo](https://zenodo.org/). 
+A single DOI link to the software, related to the correct version of the tool described in the entry. There are many options out there (see [this](https://blog.datacite.org/doi-registrations-software/) blog post from Datacite), but the most commonly used is [Zenodo](https://zenodo.org/). 
 
-**1.** **MUST** be a DOI link in the form  ``https://doi.org/``+``DOI`` (*e.g.*  ``https://doi.org/10.5281/zenodo.30769``).
+**1.** **MUST** be a DOI link in the form  ``https://doi.org/``+``DOI`` (*e.g.*  ``https://doi.org/10.5281/zenodo.30769`` ![](https://zenodo.org/badge/DOI/10.5281/zenodo.30769.svg)).
 
 ## Has Training material
+A link to an existing training material node in the BIII.eu database.
+
+**1.** **MUST** link to an existing training material node in BIII.eu database (*e.g* ``http://biii.eu/node/1366``).
+
+**2.** **MAY** receive more than one training material link (use Add another item button).
+
+# WARNING: the following entry attributes (Has function, Has Topic, Has biological terms ) may be considered the most important in BIII.eu. It is with them that the database will be able to connect bioimage analysts, developers and biologists. Bare this in mind.
+
 ## Has function (EDAM-Bioimaging)
+
+**2.** **MAY** receive more than one Function.
+
 ## Has Topic (EDAM-Bioimaging)
+
+**2.** **MAY** receive more than one Topic.
+
 ## Has biological terms
+
+**2.** **MAY** receive more than one biological term (use Add another item button).
+
 ## Additional keywords
+A string in which the user may add keywords to the entry in case she/he did not find existing keywords in EDAM-Bioimaging functions or topics. This field is important to support further improvements and discussions on new versions of EDAM-Bioimaging.
+
+**1.** **MUST** be a concise keyword and comprise of the most commonly used keyword that relates to the intended theme/subject (to the best of the user's knowledge, for we do not expect the user to know the best term, which is also not always agreed upon by the scientific community). 
+
+**2.** **MAY** receive more than one keyword (use Add another item button).
+
 ## Requires
+A link to an existing software node in BIII.eu to show the dependencies of the tool. 
+
 ## Execution platform
+A discrete attribue that defines in which main execution platforms the tool can be used. There are only 4 values for this attribute: ``Linux``, ``Mac``, ``Windows``, ``Unsure``. 
+
+**1.**
+
 ## Implementation type
+A discrete attribute that defines the type of implementation of the tool. A more detailed description on the discussion of implementation types is in ["Workflows and Components of Bioimage Analysis: The NEUBIAS Concept"](https://www.authorea.com/users/90123/articles/211121-workflows-and-components-of-bioimage-analysis-the-neubias-concept) ![](https://zenodo.org/badge/DOI/10.5281/zenodo.1042570.svg). The 4 values for this attribute are ``Collection``, ``Component``, ``Workflow`` and ``I do not know``
+
 ## License
+
 ## Has programming language
+Comprises both programming (coding) language used for the implementation of the entry and the programming languages supported by the entry.
+
 ## is compatible with
 ## Supported image dimension
+A discrete attribute value that defines with which image dimensions the tool can be used. The four discrete values are ``2D``, ``3D`` (), ``Multi-channel`` and `` time-series``. OBSERVATION: Note that some may understand there is an overlap with these values, for a 2D RGB image would also be a Multi-channel image and a 3D image could be a 2D + time-series image, etc.
+
 ## Interaction level
