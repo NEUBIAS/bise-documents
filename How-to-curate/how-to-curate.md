@@ -244,6 +244,6 @@ Comprises both programming (coding) language used for the implementation of the 
 
 ## is compatible with
 ## Supported image dimension
-A discrete attribute value that defines with which image dimensions the tool can be used. The four discrete values are ``2D``, ``3D`` (), ``Multi-channel`` and `` time-series``. OBSERVATION: Note that some may understand there is an overlap with these values, for a 2D RGB image would also be a Multi-channel image and a 3D image could be a 2D + time-series image, etc.
+A discrete attribute value that defines with which image dimensions the tool can be used. The four discrete values are ``2D``, ``3D``, ``Multi-channel`` and `` time-series``. OBSERVATION: Note that some may understand there is an overlap with these values, for a 2D RGB image would also be a Multi-channel image and a 3D image could be a 2D + time-series image, etc.
 
 ## Interaction level
