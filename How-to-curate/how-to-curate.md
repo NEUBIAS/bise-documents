@@ -120,6 +120,7 @@ Textual description of the software, e.g. *"The neuTube is a collection of neuro
 **6.** **SHOULD NOT** include URLs
 
 ## Author
+One or more strings that identify the author(s) of the tool. 
 
 **1.** Each author item **MUST** correspond to a single individual.
 
@@ -129,7 +130,6 @@ Textual description of the software, e.g. *"The neuTube is a collection of neuro
 **3.** **SHOULD** (if available) include the author's ORCID ID with the following template: ``LastName, FirstName (orcid.org/xxxx-xxxx-xxxx-xxxx)`` so they can be contacted more easily (to get the Orcid , google orcid + author name to get it. orcid.org/xxxx-xxxx-xxxx-xxxx). 
 
 ## Illustrative image 
-
 An illustrative image that represents the main functionality of the software entry.
 
 **1.** It **SHOULD** represent the main software functionality or a screenshot of the UI in use. In cases where a single image cannot show the main functionality of the software entry (usually happens for general purpose software and libraries) the illustrative image **SHOULD** be the logo. 
@@ -137,7 +137,6 @@ An illustrative image that represents the main functionality of the software ent
 **NOTE:** The software entry will not be promoted on the front page without an illustrative image.
 
 ## License/Openness
-
 There are only 4 discrete values for this attribute: ``Commercial``, ``Free and open source``, ``Free but not open source`` and ``I do not know``. 
  - ``Commercial`` is used when the software needs to be purchased in order to be used. 
   - ``Free and open source`` is selected when the source code is available and the software does not need to be purchased in order to be used``
@@ -147,10 +146,9 @@ There are only 4 discrete values for this attribute: ``Commercial``, ``Free and 
 **1.** If an entry is a Shareware software with different License/Openness values (*e.g.* a commercial and a free version with fewer features), it **SHOULD** have both values selected. However, we discourage users to add entries of such type. 
 
 ## Entry curator
-The entry curator field links to a BIII.eu user who is either: (1) the user who added the entry, but who is not the rightful owner of the tool, (2) a confirmed tagger, who checked the entry and curated it or (3) the rightful owner of the entry (*i.e* the tool developer or provider of the online service). 
+A link to a BIII.eu user who is either: (1) the user who added the entry, but who is not the rightful owner of the tool, (2) a confirmed tagger, who checked the entry and curated it or (3) the rightful owner of the entry (*i.e* the tool developer or provider of the online service). 
 
 ## Download page
-
 *Homepage of the software, from which is possible to download the software or some URL that best serves this purpose, e.g. "http://icy.bioimageanalysis.org/"*
 
 **1.** **MUST** resolve to a web page from the developer / provider that most specifically provides a downloadable version of the software or has a link to its source code.
@@ -160,6 +158,7 @@ The entry curator field links to a BIII.eu user who is either: (1) the user who 
 **TIP:** In case a tool lacks its own website, a URL of its code repository is OK. Do not use a general URL such as an institutional homepage, unless nothing better is available.
 
 ## Reference publication
+An url that links to a reference publication that presents the tool. 
 
 **1.** **MUST** resolve to a web page of a journal article or web page of a preprint server that most specifically links to a reference publication.
 
@@ -168,18 +167,37 @@ The entry curator field links to a BIII.eu user who is either: (1) the user who 
 **3.** **SHOULD** preferably resolve to a publication where the tool was first introduced.
 
 ## Documentation
+An URL that links to a source of information about the use, installation and applications of the software. Accepts more than one documentation attribute entry. 
 
-A link to a source of information about the use, installation and applications of the software. Accepts more than one documentation attribute entry. 
-**1.** MUST resolve to a web page from which a can obtain information about how to use the software. For example, a link to a user’s manual (e.g. Neural Circuit Tracer main page, or the the link to the [User guide](http://www.northeastern.edu/neurogeometry/wp-content/uploads/User-Guide-V-4-0.pdf) itself), a wiki page (e.g. [Anamorf Wiki](https://bitbucket.org/djpbarry/anamorf/wiki/Home), or other link from which similar information can be obtained (example, Using Fiji page or a readme page with detailed information about the software). 
-**2.** From all the options above, it is RECOMMENDED that, if only one Documentation attribute is given, the URL to the documentation resolves to the most used and comprehensive source of information about the software, no matter its type (wiki, pdf file, webpage linking to other pages, etc..).
+**1.** **MUST** resolve to a web page from which a can obtain information about how to use the software. For example, a link to a user’s manual (e.g. Neural Circuit Tracer main page, or the the link to the [User guide](http://www.northeastern.edu/neurogeometry/wp-content/uploads/User-Guide-V-4-0.pdf) itself), a wiki page (e.g. [Anamorf Wiki](https://bitbucket.org/djpbarry/anamorf/wiki/Home), or other link from which similar information can be obtained (example, Using Fiji page or a readme page with detailed information about the software). 
+
+**2.** From all the options above, it is **RECOMMENDED** that, if only one Documentation attribute is given, the URL to the documentation resolves to the most used and comprehensive source of information about the software, no matter its type (wiki, pdf file, web page linking to other pages, etc..).
+
 **3.** MAY receive more than one Documentation link (use Add another item button).
 
 ## Has usage example
-**1.** MAY link to an existing node in BIII.eu database (e.g. a workflow, a training material, a dataset…). 
-**2.** MAY receive more than one usage example link (use Add another item button).
+A url that links to a usage example, sch as a case study document (pdf, web page, video or other types of media), training material (also of any type of media, but preferably existing in BIII.eu), a workflow in which the tool is used (for components).
+
+**1.** **MAY** link to an existing node in BIII.eu database (e.g. a workflow, a training material, a dataset).
+
+**2.** **MAY** receive more than one usage example link (use Add another item button).
 
 ## Has comparison
+An url that links to a document, preferably in written media (pdf, slide deck), showing a comparison of the tool against other similar tools that perform the same job or very similar job. Examples: link to a research paper that benchmarks several tools, link to the web page of a Challenge in which the tool is included, reference to other web pages were the comparison is available.
+
+**1.** **MUST** resolve to a web page that shows results of a comparison of the tool against other similar tools. 
+
+**2.** It is **RECOMMENDED** that the description (*Link text*) of the url indicates the part of the document (a figure, a page or a reference in that document) where the results of the comparison are.
+
+**2.** **MAY** link to an existing node in BIII.eu database (e.g. a training material). 
+
+**3.** **MAY** receive more than one comparison link (use Add another item button).
+
 ## DOI link ** (DOI of the software)
+A DOI link to the software, related to the correct version of the tool described in the entry. There are many options out there (see [this](https://blog.datacite.org/doi-registrations-software/) blog post from Datacite), but the most commonly used is [Zenodo](https://zenodo.org/). 
+
+**1.** **MUST** be a DOI link in the form  ``https://doi.org/``+``DOI`` (*e.g.*  ``https://doi.org/10.5281/zenodo.30769``).
+
 ## Has Training material
 ## Has function (EDAM-Bioimaging)
 ## Has Topic (EDAM-Bioimaging)
@@ -189,8 +207,7 @@ A link to a source of information about the use, installation and applications o
 ## Execution platform
 ## Implementation type
 ## License
-
-Has programming language
-is compatible with
-Supported image dimension
-Interaction level
+## Has programming language
+## is compatible with
+## Supported image dimension
+## Interaction level
