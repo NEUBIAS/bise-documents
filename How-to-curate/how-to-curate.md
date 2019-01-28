@@ -151,6 +151,8 @@ A link to a BIII.eu user who is either: (1) the user who added the entry, but wh
 **1.** **MUST** resolve to a web page from the developer / provider that most specifically provides a downloadable version of the software or has a link to its source code.
 
 **2.** **MUST** be restricted to ``http(s?)://[^\s/$.?#].[^\s]*``
+
+**3.** The link to a Download page that does not work anymore **SHOULD** be removed and replaced by a new, working link.
   
 **TIP:** In case a tool lacks its own website, a URL of its code repository is OK. Do not use a general URL such as an institutional homepage.
 
@@ -165,7 +167,7 @@ An url that links to a reference publication that presents the tool.
 
 **4.** **MAY** receive more than one Reference Publication (use Add another item button).
 
-**5.** The link to the reference publication **SHOULD** be remove old URL that does not work anymore,
+**5.** The link to the reference publication that does not work anymore **SHOULD** be removed and replaced by a new, working link.
 
 ## Documentation
 An URL that links to a source of information about the use, installation and applications of the software. Accepts more than one documentation attribute entry. 
@@ -176,23 +178,29 @@ An URL that links to a source of information about the use, installation and app
 
 **3.** **MAY** receive more than one Documentation link (use Add another item button).
 
+**4.** The link to a documentation page that does not work anymore **SHOULD** be removed and replaced by a new, working link.
+
 ## Has usage example
-A url that links to a usage example, sch as a case study document (pdf, web page, video or other types of media), training material (also of any type of media, but preferably existing in BIII.eu), a workflow in which the tool is used (for components).
+An URL that links to a usage example, sch as a case study document (pdf, web page, video or other types of media), training material (also of any type of media, but preferably existing in BIII.eu), a workflow in which the tool is used (for components).
 
 **1.** **MAY** link to an existing node in BIII.eu database (e.g. a workflow, a training material, a dataset).
 
 **2.** **MAY** receive more than one usage example link (use Add another item button).
 
+**3.** The link to a usage example that does not work anymore **SHOULD** be removed and replaced by a new, working link.
+
 ## Has comparison
-An url that links to a document, preferably in written media (pdf, slide deck), showing a comparison of the tool against other similar tools that perform the same job or very similar job. Examples: link to a research paper that benchmarks several tools, link to the web page of a Challenge in which the tool is included, reference to other web pages were the comparison is available.
+An URL that links to a document, preferably in written media (pdf, slide deck), showing a comparison of the tool against other similar tools that perform the same job or very similar job. Examples: link to a research paper that benchmarks several tools, link to the web page of a Challenge in which the tool is included, reference to other web pages were the comparison is available. BIAFLOWS, the benchmarking webtool from Neubias WG5 could be a source of such attribute. However, we are still discussing how to interact with it. 
 
 **1.** **MUST** resolve to a web page that shows results of a comparison of the tool against other similar tools. 
 
-**2.** It is **RECOMMENDED** that the description (*Link text*) of the url indicates the part of the document (a figure, a page or a reference in that document) where the results of the comparison are.
+**2.** It is **RECOMMENDED** that the description (*Link text*) of the URL indicates the part of the document (a figure, a page or a reference in that document) where the results of the comparison are.
 
-**2.** **MAY** link to an existing node in BIII.eu database (e.g. a training material). 
+**3.** **MAY** link to an existing node in BIII.eu database (e.g. a training material). 
 
-**3.** **MAY** receive more than one comparison link (use Add another item button).
+**4.** **MAY** receive more than one comparison link (use Add another item button).
+
+**5.** The link to a comparison that does not work anymore **SHOULD** be removed and replaced by a new, working link.
 
 ## DOI link ** (DOI of the software)
 A single DOI link to the software, related to the correct version of the tool described in the entry. There are many options out there (see [this](https://blog.datacite.org/doi-registrations-software/) blog post from Datacite), but the most commonly used is [Zenodo](https://zenodo.org/). 
@@ -228,12 +236,10 @@ A string in which the user may add keywords to the entry in case she/he did not 
 **2.** **MAY** receive more than one keyword (use Add another item button).
 
 ## Requires
-A link to an existing software node in BIII.eu to show the dependencies of the tool. 
+A link to an existing software node in BIII.eu to show the dependencies of the tool. For example tool ``3D intensity profile`` requires ``ImageJ`` to be ran. 
 
 ## Execution platform
 A discrete attribue that defines in which main execution platforms the tool can be used. There are only 4 values for this attribute: ``Linux``, ``Mac``, ``Windows``, ``Unsure``. 
-
-**1.**
 
 ## Implementation type
 A discrete attribute that defines the type of implementation of the tool. A more detailed description on the discussion of implementation types is in ["Workflows and Components of Bioimage Analysis: The NEUBIAS Concept"](https://www.authorea.com/users/90123/articles/211121-workflows-and-components-of-bioimage-analysis-the-neubias-concept) ![](https://zenodo.org/badge/DOI/10.5281/zenodo.1042570.svg). The 4 values for this attribute are ``Collection``, ``Component``, ``Workflow`` and ``I do not know``
