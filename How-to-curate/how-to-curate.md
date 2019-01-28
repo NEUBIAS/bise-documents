@@ -217,12 +217,19 @@ A link to an existing training material node in the BIII.eu database.
 ## WARNING: the following entry attributes (Has function, Has Topic, Has biological terms ) may be considered the most important in BIII.eu. It is with them that the database will be able to connect the tools and make them searchable by bioimage analysts, developers and biologists. 
 
 ## Has function (EDAM-Bioimaging)
-
-**2.** **MAY** receive more than one Function.
+Details of a function the tool provides, expressed in concepts from the EDAM-Bioimaging _Operation_ ontology, e.g. _image classification_ and _model-based segmentation_. 
+**1.** **MUST** correctly specify operations performed by the tool, or (if version indicated), those specific version(s) of the tool.
+**2.** **MAY** receive more than one Function, especially when the tool has multiple modes of operation. 
+**3.** **SHOULD** describe all the primary operation and **SHOULD NOT** describe secondary or minor operations. In case there are any questions, start discussion in BIII.eu forum. 
 
 ## Has Topic (EDAM-Bioimaging)
+General scientific domain the tool serves or other general category (EDAM Bioimaging Topic), e.g. _Tissue image analysis, Microscopy, Machine Learning_.
 
-**2.** **MAY** receive more than one Topic.
+**1.** **MUST** correctly specify Topics the tool relates to, or (if version indicated), those specific version(s) of the tool.
+
+**2.** **MAY** receive more than one Topic. We **RECOMMEND** to at least refer to the single most important scientific topic. 
+
+**3.** **SHOULD NOT** exhaustively specify all the topics of secondary relevance.
 
 ## Has biological terms
 
@@ -245,6 +252,22 @@ A discrete attribue that defines in which main execution platforms the tool can 
 A discrete attribute that defines the type of implementation of the tool. A more detailed description on the discussion of implementation types is in ["Workflows and Components of Bioimage Analysis: The NEUBIAS Concept"](https://www.authorea.com/users/90123/articles/211121-workflows-and-components-of-bioimage-analysis-the-neubias-concept) ![](https://zenodo.org/badge/DOI/10.5281/zenodo.1042570.svg). The 4 values for this attribute are ``Collection``, ``Component``, ``Workflow`` and ``I do not know``
 
 ## License
+Software or data usage license, e.g. "GPL-3.0"
+
+**1. MUST** acurately describe the license used.
+**2. SHOULD** use "Proprietary" in cases where the software is under license whereby it can be obtained from the provider (e.g. for money), and then owned, i.e. definitely not an open-source or free software license.
+**3. SHOULD** use "Unlicensed" for software which is not licensed and is not "Proprietary".
+**4. SHOULD** use "Other" if the software is available under an uncommon license not listed below and which is not "Proprietary".
+        a controlled vocabulary of valid terms is defined in biotoolsSchema.
+        see the syntax guidelines.
+> **Licenses: 
+> Apache License 2.0
+> BSD 3-Clause "New" or "Revised" license
+> BSD 2-Clause "Simplified" or "FreeBSD" license
+> GNU General Public License (GPL)
+> GNU Library or "Lesser" General Public License (LGPL)
+> MIT license
+
 
 ## Has programming language
 Comprises both programming (coding) language used for the implementation of the entry and the programming languages supported by the entry.
