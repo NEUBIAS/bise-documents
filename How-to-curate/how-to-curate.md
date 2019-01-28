@@ -1,12 +1,12 @@
 # Guidelines to BIII.eu curators
 
-BIII.eu is a web-based database that includes bioimage analysis tools, such as Software, Training material and Datasets. The guidelines here presented will help confirmed taggers add and curate _software_ entries into BIII.eu only. The software entry of the webtool include from simple _components_, such as a gaussian filter, to image processing libraries (_collections_ of components) and _workflows_ (e.g. single particle tracking workflows). 
+BIII.eu is a web-based database that includes bioimage analysis tools, such as Software, Training material and Datasets. The guidelines presented here will help confirmed taggers add and curate _software_ entries into BIII.eu only. The software entry of the webtool include from simple _components_ (e.g. gaussian filter), to image processing libraries, _collections_ of components, and _workflows_ (e.g. single particle tracking). 
 
 The detailed description of the types of tools that can be included in BIII.eu webtool are still under discussion. However, we ask curators and taggers to include only tools that can be used (e.g we do not seek a publication without an implementation of the code publicly available. Commercial software can be accepted if specified as so) and relate to image analysis problems in biology (a.k.a bioimage analysis). 
 
 The tools are described using two ontologies, [**BISE-core-ontology**](https://github.com/NeuBIAS/bise-core-ontology) and [**EDAM-Bioimaging**](https://github.com/edamontology/edam-bioimaging). **BISE-core-ontology** contains the structure of description of entries in BIII.eu, not only software, and includes entry properties such as author, reference publication, curator and so on. **EDAM-Bioimaging** is used as a source of terms to describe the entry with Bioimaging related vocabulary.  
 
-In BISE, a software entry describes a bioimage analysis tool, which can be classified as a _component_, a _collection_ or a _workflow_. A _component_ is an implementation of certain image processing / analysis algorithms. Each component alone does not solve a Bioimage Analysis problem. These problems can be addressed by combining such components into workflows. On the other hand, a _workflow_ is a set of components assembled in some specific order to process bioimages and estimate some numerical parameters relevant to the biological system under study. Workflows take image data as input and output either processed images or other type of data (usually numeric values). Workflows can be a combination of components from the same or different software packages. Finally, a _collection_ is a software that encapsulate a set of bioimage components and/or workflows, e.g. libraries such as [**imglib2**](http://biii.eu/imglib2) and [**scikit-image**](http://biii.eu/scikit-image) or general purpose software such as [**Fiji**](http://biii.eu/fiji), [**Icy**](http://biii.eu/icy).
+In BISE, a software entry describes a bioimage analysis tool, which can be classified as a _component_, a _collection_ or a _workflow_. A _component_ is an implementation of certain image processing / analysis algorithms. Each component alone does not solve a Bioimage Analysis problem. These problems can be addressed by combining such components into workflows. On the other hand, a _workflow_ is a set of components assembled in some specific order to process bioimages and estimate some numerical parameters relevant to the biological system under study. Workflows take image data as input and output either processed images or other type of data (usually numeric values). Workflows can be a combination of components from the same or different software packages. Finally, a _collection_ is a software that encapsulates a set of bioimage components and/or workflows, e.g. libraries such as [**imglib2**](http://biii.eu/imglib2) and [**scikit-image**](http://biii.eu/scikit-image) or general purpose software such as [**Fiji**](http://biii.eu/fiji), [**Icy**](http://biii.eu/icy).
 
 OBSERVATION: These curation guidelines were inspired by [biotoolsDocs](https://github.com/bio-tools/biotoolsDocs/blob/master/github_projects.rst) documentation. Part of it has been adapted or used as is from the original **biotoolsDocs**. Thanks to Jon Ison for referencing biotools documentation efforts. 
 
@@ -34,7 +34,7 @@ Consider the following *before* adding a software entry in BIII.eu
 
 1. **Are one or more entries required to describe the software?**
 
-   - Software with multiple implementations often require multiple entries. Example: SOAX - has 2 different ways of downloading it: One is the windows standalone executable and the second is the source code, which will require one to compile it in any OS (requiring ITK, VTK and Boost C++ libraries). In that case, the best way is to create two entries: one by location of download since it is actually two different software, and each entry should have only one dowload page (has location). In addition one entry would only have Windows as the supported platform, while in the other, any OS. 
+   - Software with multiple implementations often require multiple entries. Example: SOAX - has 2 different ways of downloading it: One is the windows standalone executable and the second is the source code, which will require one to compile it in any OS. In that case, the best way is to create two entries: one by location of download since it is actually two different software, and each entry should have only one dowload page (has location). In addition one entry would only have Windows as the supported platform, while in the other, any OS. 
    - Collections also often require multiple entries. Example: Simple Neurite Tracer (existing entry) is an ImageJ-Fiji plugin which has three workflow options available: 2 semi-automated and 1 fully automated. In this case, one would create one entry for Simple Neurite Tracer (the plugin) as a _Collection_, then one entry by example workflow, and specify the difference in the title. You will have one plugin, and 3 workflows requiring the plugin Simple Neurite Tracer.
    - tools with multiple interfaces (not described in bise-core-ontology) **SHOULD** be described by a single entry **unless** these interfaces provide fundamental functional differences. 
    - if in doubt, post in BIII.eu forum or contact confirmed taggers or admin.
@@ -102,7 +102,7 @@ Canonical software name assigned by the tagger, preferably the software develope
 >>   - be wary of names that are very long (>25 characters). If shortening the name is necessary, don't truncate it in a way (*e.g.* within the middle of a word) that would render it meaningless or unintuitive
 
 ## Description 
-Textual description of the software, e.g. *"The neuTube is a collection of neuron reconstruction tools from fluorescence microscope images. It has an interactive system with a 3D viewer, which can be clicked in 3D and perform neuron tracing automatically and semi-automatically. It can automatically recognize branching points as junctions. Traced neurons can be exported to swc format, which could be imported by various software packages. neuTube has Win and Mac OS standalone executable builds and may also be installed by manual compilation. In addition, neuTube can be used as a plugin in Vaa3D."*
+Textual description of the software, e.g. *"The neuTube is a collection of neuron reconstruction tools from fluorescence microscope images. It has an interactive system with a 3D viewer, which can be clicked in 3D and perform neuron tracing automatically and semi-automatically. It can automatically recognize branching points as junctions. Traced neurons can be exported to swc format, which could be imported by various software packages. neuTube has Win and Mac OS standalone executable builds and may also be installed by manual compilation."*
 
 *example 2: "All-path-pruning 2.0 (APP2) is neuron tracing (fully automated) component of Vaa3D. APP2 prunes an initial reconstruction tree of a neuron’s morphology using a long-segment-first hierarchical procedure instead of the original termini-first-search process in APP. APP2 computes the distance transform of all image voxels directly for a gray-scale image, without the need to binarize the image before invoking the conventional distance transform. APP2 uses a fast-marching algorithm to compute the initial reconstruction trees without pre-computing a large graph. This method allows to trace large images. This method can be used with default parameters or user-defined parameters."*
 
@@ -112,7 +112,6 @@ Textual description of the software, e.g. *"The neuTube is a collection of neuro
 
 **4.** **SHOULD NOT** include any of the following, *unless* essential to distinguish the tool from other entries:
 
->  - general or technical terms ("software", "application", "plugin" *etc.*) 
 >  - provenance information *e.g.* software provider, institute or person name
 
 **5.** **SHOULD NOT** describe how good the software is (mentions of applicability are OK)
@@ -132,9 +131,7 @@ One or more strings that identify the author(s) of the tool.
 ## Illustrative image 
 An illustrative image that represents the main functionality of the software entry.
 
-**1.** It **SHOULD** represent the main software functionality or a screenshot of the UI in use. In cases where a single image cannot show the main functionality of the software entry (usually happens for general purpose software and libraries) the illustrative image **SHOULD** be the logo. 
-
-**NOTE:** The software entry will not be promoted on the front page without an illustrative image.
+**1.** It **SHOULD** represent the main software functionality or a screenshot of the UI in use. In cases where a single image cannot show the main functionality of the software entry (usually happens for general purpose software and libraries) the illustrative image **SHOULD** be the logo. The software entry will not be promoted on the front page without an illustrative image.
 
 ## License/Openness
 There are only 4 discrete values for this attribute: ``Commercial``, ``Free and open source``, ``Free but not open source`` and ``I do not know``. 
@@ -146,7 +143,7 @@ There are only 4 discrete values for this attribute: ``Commercial``, ``Free and 
 **1.** If an entry is a Shareware software with different License/Openness values (*e.g.* a commercial and a free version with fewer features), it **SHOULD** have both values selected. However, we discourage users to add entries of such type. 
 
 ## Entry curator
-A link to a BIII.eu user who is either: (1) the user who added the entry, but who is not the rightful owner of the tool, (2) a confirmed tagger, who checked the entry and curated it or (3) the rightful owner of the entry (*i.e* the tool developer or provider of the online service). 
+A link to a BIII.eu user who is either: (1) the user who added the entry, but who is not the rightful owner of the tool (When the tool is first added), (2) a confirmed tagger, who checked the entry and curated it or (3) the rightful owner of the entry (*i.e* the tool developer or provider of the online service). When the tool added in BIII.eu, the value of Entry curator will change upon curation (either to the confirmed tagger who curated the tool or the rightful owner of the tool)
 
 ## Download page
 *Homepage of the software, from which is possible to download the software or some URL that best serves this purpose, e.g. "http://icy.bioimageanalysis.org/"*
@@ -155,7 +152,7 @@ A link to a BIII.eu user who is either: (1) the user who added the entry, but wh
 
 **2.** **MUST** be restricted to ``http(s?)://[^\s/$.?#].[^\s]*``
   
-**TIP:** In case a tool lacks its own website, a URL of its code repository is OK. Do not use a general URL such as an institutional homepage, unless nothing better is available.
+**TIP:** In case a tool lacks its own website, a URL of its code repository is OK. Do not use a general URL such as an institutional homepage.
 
 ## Reference publication
 An url that links to a reference publication that presents the tool. 
@@ -166,14 +163,18 @@ An url that links to a reference publication that presents the tool.
 
 **3.** **SHOULD** preferably resolve to a publication where the tool was first introduced.
 
+**4.** **MAY** receive more than one Reference Publication (use Add another item button).
+
+**5.** The link to the reference publication **SHOULD** be remove old URL that does not work anymore,
+
 ## Documentation
 An URL that links to a source of information about the use, installation and applications of the software. Accepts more than one documentation attribute entry. 
 
-**1.** **MUST** resolve to a web page from which a can obtain information about how to use the software. For example, a link to a user’s manual (e.g. Neural Circuit Tracer main page, or the the link to the [User guide](http://www.northeastern.edu/neurogeometry/wp-content/uploads/User-Guide-V-4-0.pdf) itself), a wiki page (e.g. [Anamorf Wiki](https://bitbucket.org/djpbarry/anamorf/wiki/Home), or other link from which similar information can be obtained (example, Using Fiji page or a readme page with detailed information about the software). 
+**1.** **MUST** resolve to a web page from which one can obtain information about how to use the software. For example, a link to a user’s manual (e.g. Neural Circuit Tracer main page, or the the link to the [User guide](http://www.northeastern.edu/neurogeometry/wp-content/uploads/User-Guide-V-4-0.pdf) itself), a wiki page (e.g. [Anamorf Wiki](https://bitbucket.org/djpbarry/anamorf/wiki/Home), or other link from which similar information can be obtained (example, Using Fiji page or a readme page with detailed information about the software). 
 
 **2.** From all the options above, it is **RECOMMENDED** that, if only one Documentation attribute is given, the URL to the documentation resolves to the most used and comprehensive source of information about the software, no matter its type (wiki, pdf file, web page linking to other pages, etc..).
 
-**3.** MAY receive more than one Documentation link (use Add another item button).
+**3.** **MAY** receive more than one Documentation link (use Add another item button).
 
 ## Has usage example
 A url that links to a usage example, sch as a case study document (pdf, web page, video or other types of media), training material (also of any type of media, but preferably existing in BIII.eu), a workflow in which the tool is used (for components).
@@ -205,7 +206,7 @@ A link to an existing training material node in the BIII.eu database.
 
 **2.** **MAY** receive more than one training material link (use Add another item button).
 
-# WARNING: the following entry attributes (Has function, Has Topic, Has biological terms ) may be considered the most important in BIII.eu. It is with them that the database will be able to connect bioimage analysts, developers and biologists. Bare this in mind.
+## WARNING: the following entry attributes (Has function, Has Topic, Has biological terms ) may be considered the most important in BIII.eu. It is with them that the database will be able to connect the tools and make them searchable by bioimage analysts, developers and biologists. 
 
 ## Has function (EDAM-Bioimaging)
 
