@@ -17,13 +17,17 @@ If you wish to suggest changes or additions to this documentation, please raise 
 Try to fill as many fields as possible. If one field definition is unclear, report in the [BIII.eu forum](http://biii.eu/forum) or raise [an issue](https://github.com/NeuBIAS/bise-documents/issues) in Github [bise documents repository](https://github.com/NeuBIAS/bise-documents). Also mind that there is an [Entry Information Standard documentation](https://github.com/Leandroscholz/bise-documents/blob/master/Entry-information-standard/Entry-info-standard.md) for BISE, where you can check whether your entry will be classified from 'sparse' to 'comprehensive'.
 
 
->The key words "MUST", "MUST NOT", "REQUIRED", "SHALL", "SHALL NOT", "SHOULD", "SHOULD NOT", "RECOMMENDED",  "MAY", and "OPTIONAL" in this document are to be interpreted as described in [RFC 2119](http://www.ietf.org/rfc/rfc2119.txt>):
+The key words "MUST", "MUST NOT", "REQUIRED", "SHALL", "SHALL NOT", "SHOULD", "SHOULD NOT", "RECOMMENDED",  "MAY", and "OPTIONAL" in this document are to be interpreted as described in [RFC 2119](http://www.ietf.org/rfc/rfc2119.txt>):
 
->- **"MUST"**, **"REQUIRED"** or **"SHALL"** mean that the guideline is an absolute requirement of the specification.
->- **"MUST NOT"** or **"SHALL NOT"** mean that the guideline is an absolute prohibition of the specification.
->- **"SHOULD"** or **"RECOMMENDED"** mean that there may exist valid reasons in particular circumstances to ignore a particular guideline, but the full implications must be understood and carefully weighed before doing so.
->- **"SHOULD NOT"** or the phrase **"NOT RECOMMENDED"** mean that there may exist valid reasons in particular circumstances when acting contrary to the geuideline is acceptable or even useful, but the full implications should be understood and the case carefully weighed before doing so.
->- **"MAY** or **"OPTIONAL"** mean that the guideline is truly optional; you can choose to follow it or not.
+* **"MUST"**, **"REQUIRED"** or **"SHALL"** mean that the guideline is an absolute requirement of the specification.
+
+* **"MUST NOT"** or **"SHALL NOT"** mean that the guideline is an absolute prohibition of the specification.
+
+* **"SHOULD"** or **"RECOMMENDED"** mean that there may exist valid reasons in particular circumstances to ignore a particular guideline, but the full implications must be understood and carefully weighed before doing so.
+
+* **"SHOULD NOT"** or the phrase **"NOT RECOMMENDED"** mean that there may exist valid reasons in particular circumstances when acting contrary to the geuideline is acceptable or even useful, but the full implications should be understood and the case carefully weighed before doing so.
+
+* **"MAY** or **"OPTIONAL"** mean that the guideline is truly optional; you can choose to follow it or not.
     
 # General guidelines
 ## Before you start
@@ -268,19 +272,19 @@ Software or data usage license, e.g. "GPL-3.0"
 
 **4. SHOULD** either use "Other" or the License name (if known) if the software is available under an uncommon license not listed below and which is not "Proprietary".
         
-> **Most Common Licenses (if you know of an important one to add feel free to suggest):** 
+**Most Common Licenses (if you know of an important one to add feel free to suggest):** 
 
-> Apache License 2.0
+* Apache License 2.0
 
-> BSD 3-Clause "New" or "Revised" license
+* BSD 3-Clause "New" or "Revised" license
 
-> BSD 2-Clause "Simplified" or "FreeBSD" license
+* BSD 2-Clause "Simplified" or "FreeBSD" license
 
-> GNU General Public License (GPL)
+* GNU General Public License (GPL)
 
-> GNU Library or "Lesser" General Public License (LGPL)
+* GNU Library or "Lesser" General Public License (LGPL)
 
-> MIT license
+* MIT license
 
 ## Has programming language
 Comprises both programming (coding) language used for the implementation of the entry and the programming languages supported by the entry. We still do not have a controlled vocabulary, so if you type a new language, which wasn't previously in BIII.eu, it will create a new node with that name. 
