@@ -1,3 +1,11 @@
+# Roles
+
+**Newbie tagger** When you create an account, you become a _newbie tagger_. _Newbie taggers_ can create new content, and only edit their own content. If _newbie taggers_ wish to edit an existing entry, not created by themselves, they can ask to become a confirmed tagger.
+
+**Confirmed tagger** can revert revisions, delete content, edit any content, and publish comments submitted to publication. To parse submitted comments and publish it for confirmed taggers, go to shortcut, validate/edit comments.
+
+**ALL:** Please use the forum to give us feedback on additional features, report problems in user experience, suggest use cases...
+
 # Guidelines to BIII.eu curators
 
 BIII.eu is a web-based database that includes bioimage analysis tools, such as Software, Training material and Datasets. The guidelines presented here will help confirmed taggers add and curate _software_ entries into BIII.eu only. The software entry of the webtool include from simple _components_ (e.g. gaussian filter), to image processing libraries, _collections_ of components, and _workflows_ (e.g. single particle tracking). 
