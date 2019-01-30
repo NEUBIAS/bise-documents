@@ -106,7 +106,7 @@ Textual description of the software, e.g. *"The neuTube is a collection of neuro
 
 *example 2: "All-path-pruning 2.0 (APP2) is neuron tracing (fully automated) component of Vaa3D. APP2 prunes an initial reconstruction tree of a neuron’s morphology using a long-segment-first hierarchical procedure instead of the original termini-first-search process in APP. APP2 computes the distance transform of all image voxels directly for a gray-scale image, without the need to binarize the image before invoking the conventional distance transform. APP2 uses a fast-marching algorithm to compute the initial reconstruction trees without pre-computing a large graph. This method allows to trace large images. This method can be used with default parameters or user-defined parameters."*
 
-**1.** **MUST** provide a concise summary of purpose / function of the tool
+**1.** **MUST** provide a concise summary of purpose / function of the tool. we **RECOMMEND** the description bo te of 1-2 short paragraphs. 
 
 **2.** **MUST** begin with a capital letter and end with a period ('.') 
 
@@ -218,32 +218,37 @@ A link to an existing training material node in the BIII.eu database.
 
 ## Has function (EDAM-Bioimaging)
 Details of a function the tool provides, expressed in concepts from the EDAM-Bioimaging _Operation_ ontology, e.g. _image classification_ and _model-based segmentation_. 
+
 **1.** **MUST** correctly specify operations performed by the tool, or (if version indicated), those specific version(s) of the tool.
+
 **2.** **MAY** receive more than one Function, especially when the tool has multiple modes of operation. 
+
 **3.** **SHOULD** describe all the primary operation and **SHOULD NOT** describe secondary or minor operations. In case there are any questions, start discussion in BIII.eu forum. 
 
 ## Has Topic (EDAM-Bioimaging)
 General scientific domain the tool serves or other general category (EDAM Bioimaging Topic), e.g. _Tissue image analysis, Microscopy, Machine Learning_.
 
-**1.** **MUST** correctly specify Topics the tool relates to, or (if version indicated), those specific version(s) of the tool.
+**1.** **MUST** specifiy the most important and relevant scientific topics, although we **RECOMMEND** to refer at least to the single most important scientific topic. 
 
-**2.** **MAY** receive more than one Topic. We **RECOMMEND** to at least refer to the single most important scientific topic. 
+**2.** **MUST** correctly specify Topics the tool relates to, or (if version indicated), those specific version(s) of the tool.
 
-**3.** **SHOULD NOT** exhaustively specify all the topics of secondary relevance.
+**3.** **MAY** receive more than one Topic. 
+
+**4.** **SHOULD NOT** exhaustively specify all the topics of secondary relevance.
 
 ## Has biological terms
 
 **2.** **MAY** receive more than one biological term (use Add another item button).
 
 ## Additional keywords
-A string in which the user may add keywords to the entry in case she/he did not find existing keywords in EDAM-Bioimaging functions or topics. This field is important to support further improvements and discussions on new versions of EDAM-Bioimaging.
+A string in which the user may add keywords to the entry in case she/he did not find existing keywords in EDAM-Bioimaging functions or topics. This field is important to support further improvements and discussions on new versions of EDAM-Bioimaging or modifications in BIII.eu.
 
 **1.** **MUST** be a concise keyword and comprise of the most commonly used keyword that relates to the intended theme/subject (to the best of the user's knowledge, for we do not expect the user to know the best term, which is also not always agreed upon by the scientific community). 
 
 **2.** **MAY** receive more than one keyword (use Add another item button).
 
 ## Requires
-A link to an existing software node in BIII.eu to show the dependencies of the tool. For example tool ``3D intensity profile`` requires ``ImageJ`` to be ran. 
+A link to an existing software node in BIII.eu to show either in which platform it can be run or the dependencies of the tool. For example tool ``3D intensity profile`` requires ``ImageJ`` to be run. 
 
 ## Execution platform
 A discrete attribue that defines in which main execution platforms the tool can be used. There are only 4 values for this attribute: ``Linux``, ``Mac``, ``Windows``, ``Unsure``. 
@@ -255,17 +260,27 @@ A discrete attribute that defines the type of implementation of the tool. A more
 Software or data usage license, e.g. "GPL-3.0"
 
 **1. MUST** acurately describe the license used.
+
 **2. SHOULD** use "Proprietary" in cases where the software is under license whereby it can be obtained from the provider (e.g. for money), and then owned, i.e. definitely not an open-source or free software license.
+
 **3. SHOULD** use "Unlicensed" for software which is not licensed and is not "Proprietary".
+
 **4. SHOULD** use "Other" if the software is available under an uncommon license not listed below and which is not "Proprietary".
         a controlled vocabulary of valid terms is defined in biotoolsSchema.
         see the syntax guidelines.
-> **Licenses: 
+        
+> **Licenses:** 
+
 > Apache License 2.0
+
 > BSD 3-Clause "New" or "Revised" license
+
 > BSD 2-Clause "Simplified" or "FreeBSD" license
+
 > GNU General Public License (GPL)
+
 > GNU Library or "Lesser" General Public License (LGPL)
+
 > MIT license
 
 
