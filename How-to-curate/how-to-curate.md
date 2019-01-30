@@ -223,22 +223,23 @@ Details of a function the tool provides, expressed in concepts from the EDAM-Bio
 
 **2.** **MAY** receive more than one Function, especially when the tool has multiple modes of operation. 
 
-**3.** **SHOULD** describe all the primary operation and **SHOULD NOT** describe secondary or minor operations. In case there are any questions, start discussion in BIII.eu forum. 
+**3.** **SHOULD** describe all the primary operations and **SHOULD NOT** describe secondary or minor operations. In case there are any questions, start discussion in BIII.eu forum. 
 
 ## Has Topic (EDAM-Bioimaging)
 General scientific domain the tool serves or other general category (EDAM Bioimaging Topic), e.g. _Tissue image analysis, Microscopy, Machine Learning_.
 
-**1.** **MUST** specifiy the most important and relevant scientific topics, although we **RECOMMEND** to refer at least to the single most important scientific topic. 
+**1.** **MUST** specifiy the **MOST IMPORTANT** and relevant scientific topics, although we **RECOMMEND** to refer at least to the single most important scientific topic. 
 
 **2.** **MUST** correctly specify Topics the tool relates to, or (if version indicated), those specific version(s) of the tool.
 
-**3.** **MAY** receive more than one Topic. 
+**3.** **MAY** receive more than one Topic. (use _Add another item_ button)
 
-**4.** **SHOULD NOT** exhaustively specify all the topics of secondary relevance.
+**4.** **SHOULD NOT** exhaustively specify all the topics of **secondary relevance**. Include Topic(s) that include the tool into the pool related tools (with the same Topic). And, if applicable, include one or more Topics that distinguish the tool from the others in the pool. (see discussion in [EDAM-Bioimaging](https://github.com/edamontology/edam-bioimaging/issues/12).
 
 ## Has biological terms
+**1.** **MUST** specify the most important and relevant biological terms.
 
-**2.** **MAY** receive more than one biological term (use Add another item button).
+**2.** **MAY** receive more than one biological term (use _Add another item_ button).
 
 ## Additional keywords
 A string in which the user may add keywords to the entry in case she/he did not find existing keywords in EDAM-Bioimaging functions or topics. This field is important to support further improvements and discussions on new versions of EDAM-Bioimaging or modifications in BIII.eu.
@@ -248,7 +249,7 @@ A string in which the user may add keywords to the entry in case she/he did not 
 **2.** **MAY** receive more than one keyword (use Add another item button).
 
 ## Requires
-A link to an existing software node in BIII.eu to show either in which platform it can be run or the dependencies of the tool. For example tool ``3D intensity profile`` requires ``ImageJ`` to be run. 
+A link to an existing software node in BIII.eu to show either in which platform it can be run or the dependencies of the tool. For example tool ``3D intensity profile`` requires ``ImageJ`` to be run, whereas 
 
 ## Execution platform
 A discrete attribue that defines in which main execution platforms the tool can be used. There are only 4 values for this attribute: ``Linux``, ``Mac``, ``Windows``, ``Unsure``. 
@@ -265,11 +266,9 @@ Software or data usage license, e.g. "GPL-3.0"
 
 **3. SHOULD** use "Unlicensed" for software which is not licensed and is not "Proprietary".
 
-**4. SHOULD** use "Other" if the software is available under an uncommon license not listed below and which is not "Proprietary".
-        a controlled vocabulary of valid terms is defined in biotoolsSchema.
-        see the syntax guidelines.
+**4. SHOULD** either use "Other" or the License name (if known) if the software is available under an uncommon license not listed below and which is not "Proprietary".
         
-> **Licenses:** 
+> **Most Common Licenses (if you know of an important one to add feel free to suggest):** 
 
 > Apache License 2.0
 
@@ -283,12 +282,22 @@ Software or data usage license, e.g. "GPL-3.0"
 
 > MIT license
 
-
 ## Has programming language
-Comprises both programming (coding) language used for the implementation of the entry and the programming languages supported by the entry.
+Comprises both programming (coding) language used for the implementation of the entry and the programming languages supported by the entry. We still do not have a controlled vocabulary, so if you type a new language, which wasn't previously in BIII.eu, it will create a new node with that name. 
 
 ## is compatible with
+A link to an existing software node in BIII.eu for which the tool was not originally developed, but that can be called from. 
+
 ## Supported image dimension
-A discrete attribute value that defines with which image dimensions the tool can be used. The four discrete values are ``2D``, ``3D``, ``Multi-channel`` and `` time-series``. OBSERVATION: Note that some may understand there is an overlap with these values, for a 2D RGB image would also be a Multi-channel image and a 3D image could be a 2D + time-series image, etc.
+A discrete attribute value that defines with which image dimensions the tool can be used. The four discrete values are ``2D``, ``3D``, ``Multi-channel`` and `` time-series``. OBSERVATION: Some may understand there is an overlap with these values, for a 2D RGB image would also be a Multi-channel image and a 3D image could be a 2D + time-series image, etc.
 
 ## Interaction level
+A discrete attribute value that defines the interaction level between user and the tool. There are four discrete values, which are:
+
+``Automated`` a tool that returns the output with a single command call (selection in a GUI) that may oy mayu not accept definition of parameters. 
+
+``Manual``
+
+``Semi-automated``a tool that requires multiple calls or user interactions in order to deliver the output. For example, tracing filaments individually until all filaments of an image are traced or identifying central points of cells in order to segment them. The interaction may occur prior to the execution of the tool or several times while the tool is being used (e.g. [Simple Neurite Tracer](http://biii.eu/simple-neurite-tracer))
+
+``I do not know``
