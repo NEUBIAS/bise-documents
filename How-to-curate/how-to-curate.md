@@ -88,30 +88,30 @@ Canonical software name assigned by the tagger, preferably the software develope
 
 **7.** **SHOULD** follow the naming patterns (see below)
 
-> ## Naming Patterns
->   For components that are part of a collection, use the pattern 
->       ``{collectionName} toolName``
->   For tools that simply wrap or provide an interface to some other tool (**NOTE: this is still uncommon in bioimage analysis and was a particular situation in biotools. It needs more discussion)**, use the pattern 
+## Naming Patterns
+   For components that are part of a collection, use the pattern 
+       ``{collectionName} toolName``
+   For tools that simply wrap or provide an interface to some other tool (**NOTE: this is still uncommon in bioimage analysis and was a particular situation in biotools. It needs more discussion)**, use the pattern 
 
 >``{collectionName} toolName {API|WS}{(providerName)}`` *e.g.* ``EMBOSS water API (ebi)``
 
->   where:
+   where:
   
->   * ``collectionName`` is the name of library, main software in which the component is present natively or other collection the underlying tool is from (if applicable).
->   * ``toolName`` is the canonical name of the underlying tool
->   * use ``API`` for Web APIs or ``WS`` for Web services
->   * ``providerName`` is the name of the institute providing the online service (if applicable)
+   * ``collectionName`` is the name of library, main software in which the component is present natively or other collection the underlying tool is from (if applicable).
+   * ``toolName`` is the canonical name of the underlying tool
+   * use ``API`` for Web APIs or ``WS`` for Web services
+   * ``providerName`` is the name of the institute providing the online service (if applicable)
 
->   If in exceptional cases (*i.e.* when registering, as separate entries, versions of a tool with fundamental differences, substitute for ``toolName`` in the pattern above:
+   If in exceptional cases (*i.e.* when registering, as separate entries, versions of a tool with fundamental differences, substitute for ``toolName`` in the pattern above:
    
 > ``toolname versionID`` *e.g.* ``ilastik 0.5``
 
    where ``versionID`` is the version number.
    
       
->> ** Tip: **
->>   - in case of mulitple related entries be consistent, *e.g.* ``Open PHACTS`` and ``Open PHACTS API``
->>   - be wary of names that are very long (>25 characters). If shortening the name is necessary, don't truncate it in a way (*e.g.* within the middle of a word) that would render it meaningless or unintuitive
+**Tip:**
+* in case of mulitple related entries be consistent, *e.g.* ``Open PHACTS`` and ``Open PHACTS API``
+* be wary of names that are very long (>25 characters). If shortening the name is necessary, don't truncate it in a way (*e.g.* within the middle of a word) that would render it meaningless or unintuitive
 
 ## Description 
 Textual description of the software, e.g. *"The neuTube is a collection of neuron reconstruction tools from fluorescence microscope images. It has an interactive system with a 3D viewer, which can be clicked in 3D and perform neuron tracing automatically and semi-automatically. It can automatically recognize branching points as junctions. Traced neurons can be exported to swc format, which could be imported by various software packages. neuTube has Win and Mac OS standalone executable builds and may also be installed by manual compilation."*
