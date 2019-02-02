@@ -1,6 +1,6 @@
 # Roles
 
-**Newbie tagger** When you create an account, you become a _newbie tagger_. _Newbie taggers_ can create new content, and only edit their own content. If _newbie taggers_ wish to edit an existing entry, not created by themselves, they can ask to become a confirmed tagger.
+**Newbie tagger** When you create an account, you become a _newbie tagger_. _Newbie taggers_ can create new content, and only edit their own content. If _newbie taggers_ wish to edit an existing entry, not created by themselves, they may ask to become a confirmed tagger.
 
 **Confirmed tagger** can revert revisions, delete content, edit any content, and publish comments submitted to publication. To parse submitted comments and publish it for confirmed taggers, go to shortcut, validate/edit comments.
 
@@ -8,13 +8,13 @@
 
 # Guidelines to BIII.eu curators
 
-BIII.eu is a web-based database that includes bioimage analysis tools, such as Software, Training material and Datasets. The guidelines presented here will help confirmed taggers add and curate _software_ entries into BIII.eu only. The software entry of the webtool include from simple _components_ (e.g. gaussian filter), to image processing libraries, _collections_ of components, and _workflows_ (e.g. single particle tracking). 
+BIII.eu is a web-based database that includes bioimage analysis tools, such as Software, Training material and Datasets. The guidelines presented here will help _newbie taggers and confirmed taggers_ to add and curate _software_ entries into BIII.eu. The software entry of the webtool include from simple _components_ (e.g. gaussian filter), to image processing libraries, _collections_ of components, and _workflows_ (e.g. single particle tracking). 
 
 The detailed description of the types of tools that can be included in BIII.eu webtool are still under discussion. However, we ask curators and taggers to include only tools that can be used (e.g we do not seek a publication without an implementation of the code publicly available. Commercial software can be accepted if specified as so) and relate to image analysis problems in biology (a.k.a bioimage analysis). 
 
 The tools are described using two ontologies, [**BISE-core-ontology**](https://github.com/NeuBIAS/bise-core-ontology) and [**EDAM-Bioimaging**](https://github.com/edamontology/edam-bioimaging). **BISE-core-ontology** contains the structure of description of entries in BIII.eu, not only software, and includes entry properties such as author, reference publication, curator and so on. **EDAM-Bioimaging** is used as a source of terms to describe the entry with Bioimaging related vocabulary.  
 
-In BISE, a software entry describes a bioimage analysis tool, which can be classified as a _component_, a _collection_ or a _workflow_. A _component_ is an implementation of certain image processing / analysis algorithms. Each component alone does not solve a Bioimage Analysis problem. These problems can be addressed by combining such components into workflows. On the other hand, a _workflow_ is a set of components assembled in some specific order to process bioimages and estimate some numerical parameters relevant to the biological system under study. Workflows take image data as input and output either processed images or other type of data (usually numeric values). Workflows can be a combination of components from the same or different software packages. Finally, a _collection_ is a software that encapsulates a set of bioimage components and/or workflows, e.g. libraries such as [**imglib2**](http://biii.eu/imglib2) and [**scikit-image**](http://biii.eu/scikit-image) or general purpose software such as [**Fiji**](http://biii.eu/fiji), [**Icy**](http://biii.eu/icy).
+In BISE, a software entry describes a bioimage analysis tool, which can be classified as a _component_, a _collection_ or a _workflow_. A _component_ is an implementation of certain image or data processing / analysis algorithms. Each component alone does not solve a Bioimage Analysis problem. These problems can be addressed by combining such components into workflows. On the other hand, a _workflow_ is a set of components assembled in some specific order to process bioimages and estimate some numerical parameters relevant to the biological system under study. Workflows take image data as input and output either processed images or other type of data (usually numeric values). Workflows can be a combination of components from the same or different software packages. Finally, a _collection_ is a software that encapsulates a set of bioimage components and/or workflows, e.g. libraries such as [**imglib2**](http://biii.eu/imglib2) and [**scikit-image**](http://biii.eu/scikit-image) or general purpose software such as [**Fiji**](http://biii.eu/fiji), [**Icy**](http://biii.eu/icy).
 
 OBSERVATION: These curation guidelines were inspired by [biotoolsDocs](https://github.com/bio-tools/biotoolsDocs/blob/master/github_projects.rst) documentation. Part of it has been adapted or used as is from the original **biotoolsDocs**. Thanks to Jon Ison for referencing biotools documentation efforts. 
 
@@ -22,7 +22,7 @@ If you wish to suggest changes or additions to this documentation, please raise 
 
 # How and what to curate? 
 
-Try to fill as many fields as possible. If one field definition is unclear, report in the [BIII.eu forum](http://biii.eu/forum) or raise [an issue](https://github.com/NeuBIAS/bise-documents/issues) in Github [bise documents repository](https://github.com/NeuBIAS/bise-documents). Also mind that there is an [Entry Information Standard documentation](https://github.com/Leandroscholz/bise-documents/blob/master/Entry-information-standard/Entry-info-standard.md) for BISE, where you can check whether your entry will be classified from 'sparse' to 'comprehensive'.
+Try to fill as many fields as possible. If one field definition is unclear, report in the [BIII.eu forum](http://biii.eu/forum) or raise [an issue](https://github.com/NeuBIAS/bise-documents/issues) in Github [bise documents repository](https://github.com/NeuBIAS/bise-documents). Also mind that there is an [Entry Information Standard documentation](https://github.com/Leandroscholz/bise-documents/blob/master/Entry-information-standard/Entry-info-standard.md) for BISE, where you can check how your entry will be interpreted and curated by confirmed taggers. The entry information standard divides the entry based on its degree of completeness, from 'sparse' to 'comprehensive'.
 
 
 The key words "MUST", "MUST NOT", "REQUIRED", "SHALL", "SHALL NOT", "SHOULD", "SHOULD NOT", "RECOMMENDED",  "MAY", and "OPTIONAL" in this document are to be interpreted as described in [RFC 2119](http://www.ietf.org/rfc/rfc2119.txt>):
@@ -107,8 +107,7 @@ Canonical software name assigned by the tagger, preferably the software develope
 > ``toolname versionID`` *e.g.* ``ilastik 0.5``
 
    where ``versionID`` is the version number.
-   
-      
+    
 **Tip:**
 * in case of mulitple related entries be consistent, *e.g.* ``Open PHACTS`` and ``Open PHACTS API``
 * be wary of names that are very long (>25 characters). If shortening the name is necessary, don't truncate it in a way (*e.g.* within the middle of a word) that would render it meaningless or unintuitive
@@ -148,7 +147,7 @@ An illustrative image that represents the main functionality of the software ent
 ## License/Openness
 There are only 4 discrete values for this attribute: ``Commercial``, ``Free and open source``, ``Free but not open source`` and ``I do not know``. 
  - ``Commercial`` is used when the software needs to be purchased in order to be used. 
-  - ``Free and open source`` is selected when the source code is available and the software does not need to be purchased in order to be used``
+  - ``Free and open source`` is selected when the source code is available and the software does not need to be purchased in order to be used.
   - ``Free but not open source`` is used when the source code is not available (closed source) but the software is free to be used. 
   - ``I do not know`` is used when the License/Openness is not know. This value **SHOULD** be avoided. 
 
@@ -226,7 +225,7 @@ A link to an existing training material node in the BIII.eu database.
 
 **2.** **MAY** receive more than one training material link (use Add another item button).
 
-## WARNING: the following entry attributes (Has function, Has Topic, Has biological terms ) may be considered the most important in BIII.eu. It is with them that the database will be able to connect the tools and make them searchable by bioimage analysts, developers and biologists. 
+##The following entry attributes (Has function, Has Topic, Has biological terms) may be considered the most important in BIII.eu. It is with them that the database will be able to connect the tools and make them searchable by bioimage analysts, developers and biologists. 
 
 ## Has function (EDAM-Bioimaging)
 Details of a function the tool provides, expressed in concepts from the EDAM-Bioimaging _Operation_ ontology, e.g. _image classification_ and _model-based segmentation_. 
@@ -261,13 +260,21 @@ A string in which the user may add keywords to the entry in case she/he did not 
 **2.** **MAY** receive more than one keyword (use Add another item button).
 
 ## Requires
-A link to an existing software node in BIII.eu to show either in which platform it can be run or the dependencies of the tool. For example tool ``3D intensity profile`` requires ``ImageJ`` to be run, whereas 
+A link to an existing software node in BIII.eu to show in which platform it can be run or the dependencies of the tool. For example tool ``3D intensity profile`` requires ``ImageJ`` to be run. On the other hand, ``DeconvolutionLab2 `` ImageJ plugin, not only requires ImageJ but also other libraries, such as (under construction). 
 
 ## Execution platform
 A discrete attribue that defines in which main execution platforms the tool can be used. There are only 4 values for this attribute: ``Linux``, ``Mac``, ``Windows``, ``Unsure``. 
 
 ## Implementation type
 A discrete attribute that defines the type of implementation of the tool. A more detailed description on the discussion of implementation types is in ["Workflows and Components of Bioimage Analysis: The NEUBIAS Concept"](https://www.authorea.com/users/90123/articles/211121-workflows-and-components-of-bioimage-analysis-the-neubias-concept) ![](https://zenodo.org/badge/DOI/10.5281/zenodo.1042570.svg). The 4 values for this attribute are ``Collection``, ``Component``, ``Workflow`` and ``I do not know``
+
+**1.** ``Component`` is an implementation of an image or data analysis/processing algorithm that may be used as a part of an image analysis workflow. A component alone does not solve a Bioimage Analysis problem.
+
+**2.**  `` Workflow`` is a set of components assembled in some specific order to process bioimages and estimate some numerical parameters relevant to the biological system under study. Workflows take image data as input and output either processed images or other type of data (usually numeric values). Workflows can be a combination of components from the same or different software.
+
+**3.** ``Collection`` is a software comprising a group of ``Components`` or ``Workflows``. Collectios are often image analysis platforms or libraries, e.g. scikit-image library and ImageJ platform. 
+
+**4.** ``I do not know`` is a tool whos type is unknown. Ideally, the user adding the entry **SHOULD** identify the tool type prior to adding it to BIII.eu.
 
 ## License
 Software or data usage license, e.g. "GPL-3.0"
@@ -295,7 +302,7 @@ Software or data usage license, e.g. "GPL-3.0"
 * MIT license
 
 ## Has programming language
-Comprises both programming (coding) language used for the implementation of the entry and the programming languages supported by the entry. We still do not have a controlled vocabulary, so if you type a new language, which wasn't previously in BIII.eu, it will create a new node with that name. 
+Comprises both programming language used for the implementation of the entry and the programming languages supported by the entry. We still do not have a controlled vocabulary, so if you type a new language, which was not previously added in BIII.eu, it will create a new node with that name. 
 
 ## is compatible with
 A link to an existing software node in BIII.eu for which the tool was not originally developed, but that can be called from. 
@@ -306,10 +313,12 @@ A discrete attribute value that defines with which image dimensions the tool can
 ## Interaction level
 A discrete attribute value that defines the interaction level between user and the tool. There are four discrete values, which are:
 
-``Automated`` a tool that returns the output with a single command call (selection in a GUI) that may oy mayu not accept definition of parameters. 
+**1.** ``Automated`` a tool that returns the output with a single command call (selection in a GUI) that may oy may not accept definition of parameters. 
 
-``Manual``
+**2.**``Manual`` a tool constructed in a way such that it uses a user interface, most commonly a Graphic User Interface (GUI) to help users perform manual image analysis tasks. ImageJ multi-point tool. 
 
-``Semi-automated``a tool that requires multiple calls or user interactions in order to deliver the output. For example, tracing filaments individually until all filaments of an image are traced or identifying central points of cells in order to segment them. The interaction may occur prior to the execution of the tool or several times while the tool is being used (e.g. [Simple Neurite Tracer](http://biii.eu/simple-neurite-tracer))
+**3.**``Semi-automated``a tool that requires multiple calls or user interactions in order to deliver the output. For example, tracing filaments individually until all filaments of an image are traced or identifying central points of cells in order to segment them. The interaction may occur prior to the execution of the tool or several times while the tool is being used (e.g. [Simple Neurite Tracer](http://biii.eu/simple-neurite-tracer))
 
-``I do not know``
+**4.**``I do not know`` a tool that does not have a known interaction level. Ideally, the tagger adding the entry to BIII.eu **SHOULD** identify the interaction level prior to adding the entry. 
+
+## The information contained here is available in NEUBIAS github repository under [bise-documents](https://github.com/NeuBIAS/bise-documents)
