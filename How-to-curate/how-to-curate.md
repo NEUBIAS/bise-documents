@@ -84,7 +84,7 @@ Canonical software name assigned by the tagger, preferably the software develope
 
 **5.** **MUST NOT** include version information *unless* this is part of common name (under discussion - there is still no field for version) 
 
-**6.** **SHOULD** preserve capitalisation *e.g.* ``MaMuT`` **not** ``mamut``.
+**6.** **SHOULD** preserve original capitalisation *e.g.* ``MaMuT`` **not** ``mamut``.
 
 **7.** **SHOULD** follow the naming patterns (see below)
 
@@ -132,7 +132,7 @@ Textual description of the software, e.g. *"The neuTube is a collection of neuro
 ## Author
 One or more strings that identify the author(s) of the tool. 
 
-**1.** Each author item **MUST** correspond to a single individual.
+**1.** Each author item **MUST** correspond to a single individual. In case an individual is not known to be the author, the name of an institution is **RECOMMENDED**.
 
 **2.** Each author item **MUST** follow the following pattern:
     ``LastName, FirstName``, where ``LastName`` **MUST NOT** be abbreviated and ``FirstName`` **SHOULD NOT** be abbreviated (usually when the first name is long it is **RECOMMENDED** to use full ``FirstName`` abbreviations or partial abbreviations (*e.g.* ``SCHOLZ, LEANDRO A. (orcid.org/0000-0002-2411-0429)``). 
@@ -319,6 +319,12 @@ A discrete attribute value that defines the interaction level between user and t
 
 **3.**``Semi-automated``a tool that requires multiple calls or user interactions in order to deliver the output. For example, tracing filaments individually until all filaments of an image are traced or identifying central points of cells in order to segment them. The interaction may occur prior to the execution of the tool or several times while the tool is being used (e.g. [Simple Neurite Tracer](http://biii.eu/simple-neurite-tracer))
 
-**4.**``I do not know`` a tool that does not have a known interaction level. Ideally, the tagger adding the entry to BIII.eu **SHOULD** identify the interaction level prior to adding the entry. 
+**4.**``I do not know`` a tool that does not have a known interaction level. Ideally, the tagger adding the entry to BIII.eu **SHOULD** identify the interaction level prior to adding the entry.  
+
+# Comments 
+
+Comments are a valuable part of BIII.eu. The comments allow users to talk more specifically about a certain tool beyond the forum. 
+
+Users may leave comments in each page of BIII.eu entries. The content of the comments may include an opinion about the tool perfomance (how good the tool does what was said to do), use cases or an update on the current status of the tool (deprecated, legacy, etc..). Users **MUST** be polite and avoid rude, violent comments.
 
 ## The information contained here is available in NEUBIAS github repository under [bise-documents](https://github.com/NeuBIAS/bise-documents)
