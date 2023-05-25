@@ -49,7 +49,7 @@ Consider the following *before* adding a software entry in BIII.eu
    - Software with multiple implementations often require multiple entries. Example: SOAX - has 2 different ways of downloading it: One is the windows standalone executable and the second is the source code, which will require one to compile it in any OS. In that case, the best way is to create two entries: one by location of download since it is actually two different software, and each entry should have only one dowload page (has location). In addition one entry would only have Windows as the supported platform, while in the other, any OS. 
    - Collections also often require multiple entries. Example: Simple Neurite Tracer (existing entry) is an ImageJ-Fiji plugin which has three workflow options available: 2 semi-automated and 1 fully automated. In this case, one would create one entry for Simple Neurite Tracer (the plugin) as a _Collection_, then one entry by example workflow, and specify the difference in the title. You will have one plugin, and 3 workflows requiring the plugin Simple Neurite Tracer.
    - tools with multiple interfaces (not described in bise-core-ontology) **SHOULD** be described by a single entry **unless** these interfaces provide fundamental functional differences. 
-   - if in doubt, post in BIII.eu forum or contact confirmed taggers or admin.
+   - if in doubt, start a discussion in [image.sc forum](https://forum.image.sc/tag/biii) or contact confirmed taggers or admin.
      
 2. **What if the software is already registered?** 
 
