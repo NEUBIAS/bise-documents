@@ -4,7 +4,7 @@
 
 **Confirmed tagger** can revert revisions, delete content, edit any content, and publish comments submitted to publication. To parse submitted comments and publish it for confirmed taggers, go to shortcut, validate/edit comments.
 
-**ALL:** Please use the forum to give us feedback on additional features, report problems in user experience, suggest use cases...
+**ALL:** Please use the [image.sc forum](https://forum.image.sc/tag/biii) to give us feedback on additional features, report problems in user experience, suggest use cases...
 
 # Guidelines to BIII.eu curators
 
@@ -22,7 +22,7 @@ If you wish to suggest changes or additions to this documentation, please raise 
 
 # How and what to curate? 
 
-Try to fill as many fields as possible. If one field definition is unclear, report in the [BIII.eu forum](http://biii.eu/forum) or raise [an issue](https://github.com/NeuBIAS/bise-documents/issues) in Github [bise documents repository](https://github.com/NeuBIAS/bise-documents). Also mind that there is an [Entry Information Standard documentation](https://github.com/Leandroscholz/bise-documents/blob/master/Entry-information-standard/Entry-info-standard.md) for BISE, where you can check how your entry will be interpreted and curated by confirmed taggers. The entry information standard divides the entry based on its degree of completeness, from 'sparse' to 'comprehensive'.
+Try to fill as many fields as possible. If one field definition is unclear, report in the [image.sc forum](https://forum.image.sc/tag/biii) or raise [an issue](https://github.com/NeuBIAS/bise-documents/issues) in Github [bise documents repository](https://github.com/NeuBIAS/bise-documents). Also mind that there is an [Entry Information Standard documentation](https://github.com/Leandroscholz/bise-documents/blob/master/Entry-information-standard/Entry-info-standard.md) for BISE, where you can check how your entry will be interpreted and curated by confirmed taggers. The entry information standard divides the entry based on its degree of completeness, from 'sparse' to 'comprehensive'.
 
 
 The key words "MUST", "MUST NOT", "REQUIRED", "SHALL", "SHALL NOT", "SHOULD", "SHOULD NOT", "RECOMMENDED",  "MAY", and "OPTIONAL" in this document are to be interpreted as described in [RFC 2119](http://www.ietf.org/rfc/rfc2119.txt>):
@@ -55,7 +55,7 @@ Consider the following *before* adding a software entry in BIII.eu
 
 - if you are the rightful owner of the entry (*i.e.* the tool developer or provider of an online service) and you are a confirmed tagger, change the field _entry curator_ to your username. In case you are not a confirmed tagger, ask for modification of your user status in the BIII.eu in [this](http://biii.eu/node/1361) page. 
 
-- if you are a normal user but wishes to suggest modifications to an existing entry, add a comment to the page of that entry and describe your suggestions.
+- if you are a normal user but wishes to suggest modifications to an existing entry, report it to [image.sc forum](https://forum.image.sc/tag/biii).
      
 3. **Are there version-specific considerations?**
 
@@ -234,7 +234,7 @@ Details of a function the tool provides, expressed in concepts from the EDAM-Bio
 
 **2.** **MAY** receive more than one Function, especially when the tool has multiple modes of operation. 
 
-**3.** **SHOULD** describe all the primary operations and **SHOULD NOT** describe secondary or minor operations. In case there are any questions, start discussion in BIII.eu forum. 
+**3.** **SHOULD** describe all the primary operations and **SHOULD NOT** describe secondary or minor operations. In case there are any questions, start discussion in [image.sc forum](https://forum.image.sc/tag/biii) or contact confirmed taggers or admin. 
 
 ## Has Topic (EDAM-Bioimaging)
 General scientific domain the tool serves or other general category (EDAM Bioimaging Topic), e.g. _Tissue image analysis, Microscopy, Machine Learning_.
